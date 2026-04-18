@@ -30,7 +30,7 @@
 * **Framework Creation & Contribution:**
   - `mtv-api-tests` — **Created and led** (216 commits, 62% of repo). Built VM provider API abstraction layers for VMware and RHV. Production standard for successor team. Other contributors: Qin Yuan (29), Maayan Hadasi (30).
   - `oadp-python-tests` — **Founded** (92 commits, ~40% of repo). Top contributor. Shahaf Bahar became 2nd contributor (39 merges). Still the production standard.
-  - `openshift-adp-python-wrapper` — **Co-founded** across two repos: `oadp-qe/openshift-adp-python-wrapper` (29 PRs, 22 merged) + `RedHatQE/openshift-python-wrapper` (7 PRs, 6 merged) = **36 PRs total, 28 merged**.
+  - `openshift-adp-python-wrapper` — **Co-founded from PR #2** across two repos: `oadp-qe/openshift-adp-python-wrapper` (29 PRs, 22 merged — built project setup, resource handlers, DPA/Backup/Restore API classes, VolumeSnapshot extensions) + `RedHatQE/openshift-python-wrapper` (7 PRs, 6 merged) = **36 PRs total, 28 merged**.
   - `oadp-apps-deployer` — 2nd largest contributor (66 commits, ~21% merge share). Prasad Joshi leads (52 merges). Established Ansible/KubeVirt role patterns.
   - `oadp-e2e-qe` — Contributor (85 commits, ~7.6% overall merge share), but **owns two subsystems within the repo:**
     - **`e2e/kubevirt-plugin/`** — Created this test suite (commit `fa294b76`, 325 lines, 3 files). 2 of 3 non-merge commits are Amos's.
@@ -159,6 +159,8 @@ Each project deliberately explored a different facet of AI engineering (local in
   - `openshift/oadp-operator` — 1 PR
   - `kubev2v/forklift-ui` — 1 PR
   - `red-hat-data-services/gpu-observability-dashboard` — 1 PR (open)
+  - `red-hat-data-services/gpu-observability-dashboard` — 1 PR open ([#3](https://github.com/red-hat-data-services/gpu-observability-dashboard/pull/3), GPU Assistant with live Thanos + K8s API + Kueue workload board — AIPCC work)
+  - `openshift/oadp-operator` — 1 PR ([#1218](https://github.com/openshift/oadp-operator/pull/1218), product operator code)
   - `Jounce-IO/iac-sandbox` — 1 PR ([#59](https://github.com/Jounce-IO/iac-sandbox/pull/59), Terraform)
   - `opendatahub-io/llama-stack-demos` — 1 PR open (#327)
   - `yuval-harpaz/alarms` — 3 PRs (3 merged, personal/community)
