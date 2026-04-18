@@ -236,23 +236,6 @@ Each project deliberately explored a different facet of AI engineering (local in
 
 ---
 
-## Self-Assessment vs. L5 Gap Analysis
-
-| Dimension | Current Level | L5 Gap |
-|-----------|--------------|--------|
-| Technical Impact | L4 | Need to drive architecture across multiple subsystems, not just contribute |
-| Software Quality | L4/Emerging L5 | Need to establish practices for large-scale systems across multiple teams |
-| Collaboration | L4 | Need to lead community initiatives, not just contribute |
-| Mentorship | **L4 met** | L4 requirement satisfied — Shahaf's promotion, cross-team coaching, docs training |
-| Business Impact | L4 | Need to drive initiatives across the organization |
-| AI/Agentic | Emerging L5 | Need adoption metrics and team-wide process changes |
-| SDLC | L4 | Need to drive SDLC evolution across the organization |
-| Influence | L4 | Need to build broad consensus for complex strategies |
-
-See companion document: `l5_development_plan.md`
-
----
-
 > *"Amos is very responsible for his work, eager to help others and comes up with ideas and suggestions to automate and improve things and processes."* — **Shveta Sachdeva**
 > *"Looking at you makes others improve themselves as well."* — **Igor Braginsky**
 
