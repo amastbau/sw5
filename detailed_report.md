@@ -872,7 +872,7 @@ The performance reviews **reinforce the L4 assessment** and add important contex
 The Google Docs evidence adds three data points not found in other sources:
 
 1. **The SWE transition is officially in motion** — "movement readiness to Software Engineer" in a 1:1 with Klara (Apr 2026), first SWE task assigned
-2. **The ADR is a real influence artifact** — Amos authored an Architecture Decision Record that was reviewed and adopted by the team. This is the strongest "technical decision-making" evidence found in any source.
+2. **The ADR review is a participation signal, not an authorship signal** — Amos was assigned to review the ADR (RHAIENG-2757, reporter: Kamesh Akella), not author it. His contribution was as a reviewer/commenter. Initially misattributed as authored by Amos — corrected after Jira verification.
 3. **The AI chatbot got positive manager feedback** but without adoption metrics — confirms awareness, not adoption
 
 These strengthen the L4 case but don't change the level assessment. The ADR is the closest thing to L5-scope influence found anywhere, but a single ADR within one team doesn't constitute "driving significant technical change across the organization."

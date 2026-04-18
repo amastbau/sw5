@@ -26,7 +26,7 @@
 
 * **Agentic E2E Framework (In Progress):** Architecting the Agentic E2E framework for RHOAI Summit 2026. Jira: RHAIENG-3688 (Critical), RHAIENG-3923.
 
-* **ADR: AI-Assisted Code Reviews** — Authored Architecture Decision Record for AI-assisted code reviews across AAET GitLab repositories. Reviewed and adopted by the team (Ken, Courtney, Pete, Kamesh). Proposes automated code analysis with GEMINI models integrated into GitLab CI/CD, with human reviewer final authority. (Google Doc: AAET-MI004)
+* **ADR: AI-Assisted Code Reviews** — Reviewed and contributed to ADR for AI-assisted code reviews across AAET GitLab repositories (AAET-MI004, authored by Kamesh Akella). Provided input on local CLI tooling and CI workflow patterns. Jira: RHAIENG-2757.
 
 * **Active SWE Transition:** "Movement readiness to Software Engineer" discussed in 1:1 with Klara Bezdekova (Apr 2026). First SWE task assigned: DNS timezone fix in Terraform. Integration into Model Validation team. Research: GCP to IBM migration, logging consolidation via agentic solutions, GPUaaS working group.
 
