@@ -146,8 +146,14 @@
 
 | Period | Manager | What | How | Overall |
 |--------|---------|------|-----|---------|
-| Q4 2023 | Aziza Karol | Meets Expectations | Surpasses Expectations | Successful Performer |
+| Q4 2023 | Aziza Karol | Meets Expectations | **Surpasses Expectations** | Successful Performer |
 | H2 2024 | Wesley Hayutin | Meets Expectations | Meets Expectations | Successful Performer |
+
+**Quarterly highlights (from manager reviews):**
+- **Q3 2024 (Aziza):** *"Your engagement on Slack channel and providing face-to-face guidance to Solution Architects is awesome."* — Recognized for cross-team engagement and customer-facing support.
+- **Q4 2024 (Wes):** *"Very nice work here Amos!... Amos lead the effort to create a library of backups from past releases... This is quite critical."* — Recognized for business-critical backup library.
+- **Q2 2025 (Wes, Slack):** *"Amos was key this quarter... wrote new tests, updated old tests, automated tests, found bugs, FIXED BUGS in OADP and in Velero. Spot on performance and I could not ask for anything more."* — **Highest recognition received.** Aligns with 150% VIC and upstream Velero delivery.
+- **FY2021 (Daniel Gur):** Promoted from Software Quality Engineer to Senior SQE within ~3 years. Goals: "Main Automation contributor for MTV API area" — achieved (216 commits, 62% of repo).
 
 **Manager highlights from quarterly reviews:**
 - *"Amos lead the effort to create a library of backups from past releases... This is quite critical as some businesses have 2-3 year compliance requirements."* — Wes Hayutin (Q4 2024)
