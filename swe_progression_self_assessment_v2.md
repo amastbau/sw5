@@ -10,18 +10,18 @@
 **L4 Requirement:** Leads the design and development of software solutions for features that cross multiple subsystems or components.
 
 * **Upstream Code Contributions (Go) — velero-io/velero:**
-  - **PR #9024 (MERGED, Jul 2025):** LabelSelector restore fix — related PVC and VolumeSnapshot not included during restore. Iterated through 3 PRs (#8795, #8796, #9024) before the approach was accepted. Initially questioned by upstream maintainer ("I'm not very convinced"); proved viability in OADP fork; upstream adopted.
-  - **Issue #7099 (Nov 2023):** Identified post-restore hooks timing bug — hooks run before DataDownload releases PV. Filed upstream, initially deprioritized.
-  - **Issue #8910 (May 2025):** Reported PostHooks multiple exec hooks ignored in HooksAttempts calculation.
-  - **Issue #9182 (Aug 2025):** Proposed granular control over Velero annotation hooks.
+  - [**PR #9024** (MERGED)](https://github.com/velero-io/velero/pull/9024): LabelSelector restore fix — PVC and VolumeSnapshot not included during restore. Iterated through [#8795](https://github.com/velero-io/velero/pull/8795), [#8796](https://github.com/velero-io/velero/pull/8796) before accepted. Initially questioned by maintainer; proved viability in OADP fork; upstream adopted.
+  - [**Issue #7099**](https://github.com/velero-io/velero/issues/7099) (Nov 2023): Post-restore hooks timing bug — hooks run before DataDownload releases PV. Filed upstream, initially deprioritized.
+  - [**Issue #8910**](https://github.com/velero-io/velero/issues/8910) (May 2025): PostHooks multiple exec hooks ignored in HooksAttempts calculation.
+  - [**Issue #9182**](https://github.com/velero-io/velero/issues/9182) (Aug 2025): Proposed granular control over Velero annotation hooks.
 
 * **Upstream Code — openshift/velero (downstream carry):**
-  - **PR #379 (MERGED, Apr 2025):** Selective PVC restore — moved size patch to backup action, added VolumeSnapshot/VolumeSnapshotContent to CSI additional items. Iterated through PRs #360, #378, #379.
-  - **PR #435 (Draft, Aug 2025):** Skip annotation hooks during backup (in progress).
+  - [**PR #379** (MERGED)](https://github.com/openshift/velero/pull/379): Selective PVC restore — moved size patch to backup action, added VolumeSnapshot/VolumeSnapshotContent to CSI additional items. Iterated through [#360](https://github.com/openshift/velero/pull/360), [#378](https://github.com/openshift/velero/pull/378).
+  - [**PR #435** (Draft)](https://github.com/openshift/velero/pull/435): Skip annotation hooks during backup (in progress).
 
 * **Upstream Code — kubevirt/kubevirt-velero-plugin:**
-  - **PR #349 (MERGED, Apr 2025, in release v0.8.0):** Fixed critical bug in VM resource graph — PVCs silently excluded during restore with label selectors, causing DataVolumes to hang. 22 lines across 5 files. Iterated from PR #328.
-  - **PRs #366, #369:** E2E test improvements (closed/draft).
+  - [**PR #349** (MERGED, in release v0.8.0)](https://github.com/kubevirt/kubevirt-velero-plugin/pull/349): Fixed critical bug in VM resource graph — PVCs silently excluded during restore. 22 lines across 5 files. Iterated from [#328](https://github.com/kubevirt/kubevirt-velero-plugin/pull/328).
+  - [#366](https://github.com/kubevirt/kubevirt-velero-plugin/pull/366), [#369](https://github.com/kubevirt/kubevirt-velero-plugin/pull/369): E2E test improvements (closed/draft).
 
   **Total upstream footprint: 3 merged PRs + 3 issues filed + 7 additional PRs (iterations/drafts) = 13 upstream items across 3 repos.**
 
@@ -97,18 +97,18 @@
 ## 6. AI / Agentic Engineering
 **L4 Requirement:** Evaluates and introduces new AI-driven methodologies that resolve complex issues and improve Engineering efficiency.
 
-**Note:** All AI projects below are personal POC/experimental repos under `amastbau`. None have verified team adoption yet.
+**Team-adopted / upstream-contributed work:**
 
-* **midstream-integration-chatbot**: RAG chatbot with MCP tools (Jira, Confluence, GitLab, GitHub, Google Docs). Demonstrated in sprint review. Underwent security review.
-* **test-analyser**: Claude/Vertex AI regression analysis tool.
-* **classifier-eng**: FastAPI log classifier for CI pipelines.
-* **auto-todo**: AI agents autonomously handle GitHub issues.
-* **cc-rosa-rhoai** (`redhat/ai/midstream-integration/cc-rosa-rhoai`): 7 open MRs on the parent repo for v2.0 release, building on Roland Huß's codebase. Contributions include: v2.0 replatform (!16), eval gates system (!17), workbench-deploy E2E orchestrator (~3900 lines, !18), AAET add-on installer for Kagenti/Langflow/Langfuse/MCP Gateway (!19), ODH install/uninstall (!20). All mergeable, pending review.
+* **cc-rosa-rhoai** ([gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai)): ROSA HCP cluster lifecycle automation. 7 open MRs for v2.0 release, building on Roland Huß's codebase. [MR !9](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/9) (ODH install) is actively used — Summit 2026 clusters are built on main + this MR. Versioned by other team members. Not merged due to no repo owner assigned yet. v2.0 MRs: [!16](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/16) (replatform), [!17](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/17) (eval gates), [!18](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/18) (workbench-deploy ~3900 lines), [!19](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/19) (AAET add-ons), [!20](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/20) (ODH commands). Sprint demo (Feb 2026): established performance benchmarks.
 * **ai-tools hub**: Shared section in devtools repository for cross-team AI workflow documentation.
 
-* **cc-rosa-rhoai Sprint Demo** (Feb 2026): Demonstrated ROSA tool in team sprint demo. Session established performance benchmarks (2.5 hours vs 15 min manual). Tool's session summary capability praised for debugging and documentation value.
+**Personal POC/experimental (no verified team adoption):**
 
-**Gap acknowledged:** These are POC/experimental projects. Manager gave "positive feedback on the RAG chatbox" (1:1 with Chris Bynum, Nov 2025) but no team adoption metrics yet. Measuring adoption is a priority for 2026 H2.
+* **midstream-integration-chatbot**: RAG chatbot with MCP tools. Manager feedback: "positive feedback on the RAG chatbox" (1:1 with Chris Bynum, Nov 2025). Underwent security review. Not in team production use.
+* **test-analyser**, **classifier-eng**: AI regression analysis and log classification tools.
+* **auto-todo**, **hybrid-llm**, **dual-llm-chat**, **source-pad**: AI experiments and learning projects.
+
+**Gap acknowledged:** POC projects need adoption metrics. Team-adopted work (devtools smoke tests, cc-rosa-rhoai) is stronger evidence.
 
 > *"Amos has had some great ideas and there is code to back it too."* — **Wes Hayutin**
 
