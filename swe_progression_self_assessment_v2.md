@@ -82,6 +82,7 @@
 * **Promotion Impact:** Shahaf Bahar explicitly credited my mentorship as instrumental in their recent promotion.
 * **Technical Coaching:** Guided engineers on Go framework usage, Python test architecture, and AI tool adoption (Slack evidence: directing colleagues to specific functions, explaining patterns).
 * **Docs Training:** Organized and delivered multi-day OADP training for MMS documentation writers, including homework exercises (`qe-docs-train` repo).
+* **Project Initiation:** Mentored mguetta and helped initiate the `konveyor/tackle-api-tests` project — guided the early architecture and contributed 5 PRs (3 merged) to establish the foundation.
 
 
 > *"Thanks to your mentorship, I've been able to overcome challenges and achieve new heights, culminating in my recent promotion."* — **Shahaf Bahar**
