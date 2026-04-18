@@ -39,9 +39,15 @@
 
 * **Agentic E2E Smoke Test Pipeline (Delivered):** Built and delivered the agentic E2E smoke test CI pipeline into the team's shared `redhat/ai/midstream-integration/devtools` repo (11 commits, 3rd largest contributor at 11%). Three-tier test framework (minimal/medium/full) covering operators, KServe, vLLM, Kagenti, MCP Gateway, GPU nodes, LlamaStack. GitLab CI with Slack notifications, UBI9 containers. Validated on real cluster: 11 passed, 6 skipped, 1 xfailed. Jira: RHAIENG-3688 (Critical), RHAIENG-3923.
 
+  **Methodology note:** This pipeline was built rapidly using AI-assisted research — agentic exploration across multiple team repos, prompting with proper architectural context, then rigorous human review of every generated artifact. Every line of code was reviewed, understood, and approved before merge. The approach is ~100x faster than manual development, but the human-in-the-loop verification layer is non-negotiable: I question and verify all generated code, and I don't merge what I don't understand. This discipline comes from 30 years of QE mindset — trust no code, regardless of source.
+
 * **ADR: AI-Assisted Code Reviews** — Reviewed and contributed to ADR for AI-assisted code reviews across AAET GitLab repositories (AAET-MI004, authored by Kamesh Akella). Provided input on local CLI tooling and CI workflow patterns. Jira: RHAIENG-2757.
 
-* **Active SWE Transition:** "Movement readiness to Software Engineer" discussed in 1:1 with Klara Bezdekova (Apr 2026). First SWE task assigned: DNS timezone fix in Terraform. Integration into Model Validation team. Research: GCP to IBM migration, logging consolidation via agentic solutions, GPUaaS working group.
+* **Active SWE Transition:** "Movement readiness to Software Engineer" discussed in 1:1 with Klara Bezdekova (Apr 2026). Integration into Model Validation team. Research: GCP to IBM migration, logging consolidation via agentic solutions, GPUaaS working group.
+
+* **First Terraform PR Delivered (Apr 2026):** With no prior Terraform-specific knowledge (but experience with other IaC tools), completed a comprehensive self-onboarding using AI-assisted deep-dive into the `iac-sandbox` Terraform/GCP project. After a few short meetings and agentic exploration, produced PR [#59](https://github.com/Jounce-IO/iac-sandbox/pull/59) — adding optional DNS managed zone and Cloud Domains registration to `project-bootstrap/gcp/`. Validated with `terraform plan` against the live GCP project. Corrected starter code from ticket (added missing required blocks identified via provider docs research). Total time: a few hours from zero Terraform knowledge to merged-ready PR.
+
+  **TODO (update after Klara 1:1, ~week of Apr 28 2026):** Update with GCP→IBM migration design discussion outcomes and next SWE task assignment.
 
 > *"Amos leveled up this quarter. Really enjoying watching Amos grow into new areas here. Really nice debug, investigation, development and collaboration!!"* — **Wes Hayutin (Manager)**
 
@@ -89,6 +95,7 @@
 **L4 Requirement:** Owns and delivers technical initiatives with visible business impact, enabling the entire team to deliver value to the end user.
 
 * **MTV Stabilization:** Joined Red Hat and was immediately tasked with stabilizing MTV during a critical period.
+* **MTV Cross-Team Return (Q3 2024):** While fully embedded in OADP, returned to assist the MTV team for approximately a month when they needed help — recognized in Q3 2024 quarterly review as "MTV work (cross-team collaboration)."
 * **Legacy Backup Library:** Led the effort to create a library of backups from past releases for 2–3 year customer compliance retention (verified by manager in quarterly review).
 * **Upstream Bug Advocacy:** Identified upstream bugs initially deprioritized as edge cases. One resurfaced when Siemens was impacted — validating the original assessment.
 * **Release Delivery:** Delivered E2E quality sign-off for 3 major OADP releases.
@@ -107,9 +114,14 @@
 
 **Personal POC/experimental (no verified team adoption):**
 
-* **midstream-integration-chatbot**: RAG chatbot with MCP tools. Manager feedback: "positive feedback on the RAG chatbox" (1:1 with Chris Bynum, Nov 2025). Underwent security review. Not in team production use.
-* **test-analyser**, **classifier-eng**: AI regression analysis and log classification tools.
-* **auto-todo**, **hybrid-llm**, **dual-llm-chat**, **source-pad**: AI experiments and learning projects.
+* **midstream-integration-chatbot**: RAG chatbot built on Llama Stack to "eat our own dog food" — validating Red Hat's AI stack internally. Includes detailed trace exposing RAG and LLM payloads for full transparency. Demoed to team with positive reviews. Manager feedback: "positive feedback on the RAG chatbox" (1:1 with Chris Bynum, Nov 2025). Underwent security review. Not in team production use.
+* **test-analyser**: Claude/Vertex AI regression analysis — aimed at reducing manual triage from hours to minutes. Motivation: QE teams spend disproportionate time diagnosing flaky tests; automated classification changes the economics of test maintenance.
+* **classifier-eng**: FastAPI log classifier for CI pipelines — automated categorization of failure patterns. Motivation: pattern recognition across thousands of CI runs is something humans do poorly at scale.
+* **hybrid-llm**: Local/cloud LLM routing proof-of-concept — demonstrated that a mobile device (Samsung 24FE) can offload specific workloads from cloud providers. Motivation: exploring cost-efficient AI inference for engineers who need AI assistance without enterprise GPU budgets.
+* **auto-todo**: Agentic GitHub issue handling — AI agents autonomously read codebase, write code, open PRs, auto-fix on test failure. Motivation: testing the boundaries of fully autonomous development loops with verification gates.
+* **dual-llm-chat**, **source-pad**: Multi-model orchestration and source-aware chat experiments exploring how different models complement each other for different task types.
+
+Each project deliberately explored a different facet of AI engineering (local inference, token routing, agentic CI, RAG architectures, autonomous coding). The learnings from each fed directly into the production tools and architectural decisions that followed — this is an engineer's lab notebook, not abandoned code.
 
 **Gap acknowledged:** POC projects need adoption metrics. Team-adopted work (devtools smoke tests, cc-rosa-rhoai) is stronger evidence.
 
@@ -165,7 +177,7 @@
 | **Q2 2025** | Wesley Hayutin | **150%** | *"Amos was key this quarter... FIXED BUGS in OADP and in Velero. Spot on performance and I could not ask for anything more."* |
 | Q1 2025 | Wesley Hayutin | 100% | Upstream Velero PRs submitted, OADP 1.5 preparation |
 | Q4 2024 | Wesley Hayutin | 95% | *"Very nice work... Amos lead the effort to create a library of backups... This is quite critical."* |
-| Q3 2024 | Aziza Karol | 90% | *"Your engagement on Slack channel and providing face-to-face guidance to Solution Architects is awesome."* |
+| Q3 2024 | Aziza Karol | 90% | MTV cross-team assistance (~1 month). *"Your engagement on Slack channel and providing face-to-face guidance to Solution Architects is awesome."* |
 | Q2 2024 | Aziza Karol | 90% | OADP release quality, KubeVirt test coverage |
 | Q1 2024 | Aziza Karol | 90% | OADP 1.3.x delivery |
 | Q3 2021 | Daniel Gur | **127%** | MTV API framework peak delivery |

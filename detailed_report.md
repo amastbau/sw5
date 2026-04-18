@@ -346,6 +346,7 @@ Rationale: Verifiable mentorship outcome (Shahaf's promotion). Docs training is 
 | Evidence | Source | Strength |
 |----------|--------|----------|
 | MTV critical escalation resolution upon joining Red Hat | Self-assessment, CV | Moderate |
+| MTV cross-team return (Q3 2024): assisted MTV team for ~1 month while in OADP | Q3 2024 quarterly review (Aziza Karol): "MTV work (cross-team collaboration)" | Moderate |
 | Legacy backup library for 2–3 year customer compliance | Self-assessment | Moderate (unverified) |
 | OADP release quality sign-off for 3 major releases | Self-assessment, Jira | Strong |
 | Windows VM backup issues tied to enterprise customer (Siemens) | Slack S12, referenced in Siemens case channel | Moderate |
@@ -364,10 +365,10 @@ Rationale: Release-level and feature-level impact. Not initiative-level across t
 
 | Evidence | Source | Strength |
 |----------|--------|----------|
-| midstream-integration-chatbot (100+ commits, RAG + MCP tools) | GitLab CEE, GitHub | Strong (building) |
+| midstream-integration-chatbot (100+ commits, RAG + MCP tools). Built on Llama Stack (dogfooding Red Hat's AI stack). Includes detailed trace exposing RAG/LLM payloads for transparency. Demoed to team with positive reviews. | GitLab CEE, GitHub | Strong (building) |
 | Security review of chatbot by external reviewer | Slack S14 #1 (#forum-ai-midstream-integration) | Mixed (also risk signal — non-approved LLM endpoint) |
-| test-analyser (Claude/Vertex AI regression analysis) | GitHub | Moderate |
-| classifier-eng (FastAPI log classifier) | GitHub | Moderate |
+| test-analyser (Claude/Vertex AI regression analysis) — motivation: reduce manual triage from hours to minutes | GitHub | Moderate |
+| classifier-eng (FastAPI log classifier) — motivation: automated pattern recognition across thousands of CI runs | GitHub | Moderate |
 | auto-todo (agentic GitHub issue handling) | GitHub | Moderate |
 | hybrid-llm (local LLM orchestration) | GitHub | Moderate (personal) |
 | cc-rosa-rhoai (ROSA cluster automation) | GitLab CEE | Strong |
@@ -615,7 +616,7 @@ Rationale: Influence through persistence (Velero) rather than recognized authori
 | `kubevirt-velero-plugin` (fork) | Go | PR #349 source | kubevirt plugin fix |
 | `velero-openshift` (fork) | Go | Downstream carry | openshift/velero PR #379 |
 | `velero-plugin-for-csi` (fork) | Go | CSI plugin work | Plugin contributions |
-| `midstream-integration-chatbot` | Python | 100+ | RAG chatbot with MCP tools |
+| `midstream-integration-chatbot` | Python | 100+ | RAG chatbot on Llama Stack (dogfooding), detailed trace, demoed with positive reviews |
 | `oadp-operator` (fork) | Go | OADP operator work | Operator contributions |
 | `jira-gate` | Python | Jira automation | CI/CD tooling |
 | `test-analyser` | Shell | AI regression analysis | AI tooling |
@@ -827,16 +828,18 @@ The performance reviews **reinforce the L4 assessment** and add important contex
 **1:1 Amos / Chris Bynum (Nov 2025 – Feb 2026)**
 - Q1 2026 SMART goals documented: (1) Complete AAET onboarding, (2) Build AI-powered onboarding portal
 - Stay interview: Values Red Hat for "Strong Team & Managers, Open Source, Providing Real Value, Office Flex, Career Path, Relocation Options"
-- Manager feedback: "positive feedback on the RAG chatbox, but no correction feedback yet"
+- Manager feedback: "positive feedback on the RAG chatbox, but no correction feedback yet". Chatbot built on Llama Stack (dogfooding Red Hat's AI stack), includes detailed trace for RAG/LLM payload transparency, demoed to team with positive reviews.
 - Self-identified: "Still doing some work for OADP, more than I first anticipated"
 - Career goals on record with new manager
 
 **1:1 Amos / Klara Bezdekova (Apr 2026)**
 - **"Movement readiness to Software Engineer"** — active transition discussion
 - Integration into Model Validation team
-- First SWE task assigned: DNS timezone fix in Terraform
+- First SWE task assigned: DNS managed zone + Cloud Domains registration in Terraform (JN-4922)
+- **Delivered:** PR [#59](https://github.com/Jounce-IO/iac-sandbox/pull/59) — optional DNS setup gated by `var.domain_name`, validated with `terraform plan` against live GCP project (`it-gcp-model-validation-snd`). Corrected starter code from ticket (added missing `yearly_price`, `admin_contact`, `technical_contact` blocks). Zero prior Terraform knowledge → merged-ready PR in a few hours via AI-assisted self-onboarding.
 - Research areas: GCP to IBM migration, logging consolidation via agentic solutions
 - GPUaaS as another working group
+- **TODO (update after Klara 1:1, ~week of Apr 28 2026):** GCP→IBM migration design outcomes, next SWE task
 - Meeting frequency: biweekly 1:1s
 
 **ADR: AI-Assisted Code Reviews (AAET-MI004, Jan 2026)**

@@ -22,8 +22,12 @@ I am a strong advocate for the power of diversity — not just as a value, but a
 * **Critical Bug Discovery & Fix (kubevirt-velero-plugin):** I identified a critical bug in the VM resource graph logic during restore — PVCs were silently excluded when using label selectors, causing DataVolumes to hang indefinitely. I authored and submitted the PR (`kubevirt/kubevirt-velero-plugin#349`) that fixed the issue, working in collaboration with the CNV development team. The fix was small (22 lines changed across 5 files) but the root cause was non-trivial to trace through the graph-building code. I also identified and advocated for other upstream bugs that were initially deprioritized as edge cases; in one instance, the issue resurfaced years later when a major enterprise customer was impacted — validating the original assessment.
 * **Agentic Framework Architecture:** I am currently architecting the **Agentic E2E framework for Summit 2026**. This involves defining how AI agents automate infrastructure and CI/CD across ROSA, devtools, and agent repositories.
 * **Foundational Project Building:** I founded `midstream-integration-chatbot` (100+ commits), built `oadp-python-tests` from the ground up (authored all framework code from day 1, 118 commits), and became a major contributor to `oadp-apps-deployer` (68 commits, established the Ansible/KubeVirt role patterns). This is a career-long pattern: I architected Java-based test automation frameworks at Forcepoint and built automation and monitoring tools for Intel's chip design CAD infrastructure — building foundational systems from scratch is what I do.
+* **First Terraform PR (Apr 2026):** With no prior Terraform knowledge (but IaC experience), AI-assisted self-onboarding into the `iac-sandbox` GCP project. Produced PR [#59](https://github.com/Jounce-IO/iac-sandbox/pull/59) — optional DNS managed zone + Cloud Domains registration — in a few hours. Corrected starter code, validated with `terraform plan` against live project. Demonstrates rapid ramp-up capability and agentic workflow effectiveness in unfamiliar domains.
 
-> *"Amos leveled up this quarter. Really enjoying watching Amos grow into new areas here. Really nice debug, investigation, development and collaboration!!"* — **Wes Hayutin (Manager)**
+  **TODO (update after Klara 1:1, ~week of Apr 28 2026):** Add GCP→IBM migration design outcomes and next SWE task.
+
+> *"Amos was key this quarter... wrote new tests, updated old tests, automated tests, found bugs, FIXED BUGS in OADP and in Velero. Spot on performance and I could not ask for anything more :)"* — **Wes Hayutin (Q2 2025, VIC 150%)**
+> *"Amos leveled up this quarter. Really enjoying watching Amos grow into new areas here. Really nice debug, investigation, development and collaboration!!"* — **Wes Hayutin (Q1 2025)**
 
 ---
 
@@ -45,6 +49,7 @@ Nearly three decades of hands-on engineering across every layer of the stack —
 * **Review Authority:** I have reviewed **137+ MRs** across 7+ team members and **55+ OADP documentation PRs**, ensuring technical accuracy for customer-facing documentation.
 
 > *"Thank you for your hard work, attention to detail, and commitment to delivering a high-quality OADP 1.3 and timely release."* — **Aziza Karol**
+> *"Your outstanding efforts in testing the OADP 1.4.0 release. This was a critical and exceptional release... your dedication played a pivotal role in our success."* — **Daniel Gur (Jul 2024)**
 
 ---
 
@@ -66,21 +71,32 @@ Nearly three decades of hands-on engineering across every layer of the stack —
 
 * **Compute Cost Leadership (`hybrid-llm`):** I developed `hybrid-llm` as a strategic model for **routing and decentralized compute**. By proving that a mobile device (like a Samsung 24FE) can offload specific AI workloads from expensive cloud providers to local silicon, I am advocating for a "Smart Routing" strategy that has the potential to save significant costs for both individual engineers and the enterprise.
 * **MTV Critical Escalation Resolution:** Joined Red Hat and was immediately tasked with stabilizing MTV, proving critical to resolving initial critical escalations for a product the entire company was focused on.
+* **MTV Cross-Team Assistance (Q3 2024):** While already in OADP, returned to assist the MTV team for approximately a month when they needed help — demonstrating cross-team ownership and organizational flexibility. This was recognized in my Q3 2024 quarterly review under Aziza Karol as "MTV work (cross-team collaboration)."
 * **Revenue & Retention:** I architected the **legacy backup library** supporting 2–3 year customer compliance, directly preventing churn for enterprise OADP customers.
 * **Organizational Mobility:** My ability to execute complex cluster lifecycles and reviews from a mobile device sets a new standard for engineering responsiveness.
 
 > *"The whole company is VERY focused on Virt and this work will be quite critical."* — **Wes Hayutin**
 > *"Your engagement on Slack channel and providing face-to-face guidance to Solution Architects is awesome."* — **Aziza Karol**
+> *"Your dedication and contributions have been invaluable to the team, and I appreciate the positive impact you've had on our projects."* — **Aziza Karol (Year-End Summary)**
 
 ---
 
 ## 6. SDLC Innovation & AI Leadership
 **Definition:** Drives the strategy for integrating advanced AI ecosystems and evolves the SDLC.
 
-* **Strategic "Dogfooding":** I advocated for **Llama Stack-based implementations** for our internal tooling. This ensures Red Hat validates its own AI stack internally, creating a critical engineering-to-product feedback loop.
+* **Strategic "Dogfooding":** I advocated for and built **Llama Stack-based implementations** for our internal tooling — notably the **midstream-integration-chatbot**, a RAG chatbot built on Llama Stack with detailed trace exposing RAG and LLM payloads for full transparency. Demoed to the team with positive reviews. This ensures Red Hat validates its own AI stack internally, creating a critical engineering-to-product feedback loop.
 * **Agentic SDLC:** I have defined a net-new SDLC for agentic systems where velocity (PRs in minutes) is paired with a rigorous, QE-rooted **verification layer** that makes AI output trustworthy. In this dimension, my evidence meets L5 and approaches L6 ("Sets the technical vision for AI-driven engineering") — I am not just driving strategy but defining how AI engineering works for the team.
 * **Efficiency Tools:** Built **test-analyser** (Claude/Vertex AI) to automate E2E regression analysis, reducing diagnosis time from hours to minutes. Built **classifier-eng**, a FastAPI log classifier service integrated into CI pipelines for automated log classification. Built **auto-todo**, a self-evolving application where AI agents autonomously handle GitHub issues — reading the codebase, writing code, opening PRs, auto-fixing on test failure, and deploying via Vercel preview.
-* **AI Ecosystem Breadth:** Beyond the tools listed above, I have built: **ai-midstream-integration-chatbox** (51 commits — unified Q&A chatbot with RAG + live MCP tools for Jira, Confluence, GitLab, GitHub, and Google Docs), **ai_midstream_lib** (reusable patterns library for Red Hat AI Integration agents), **voice-assistant** (AI voice assistant with Whisper.cpp STT, hotword detection, learns commands locally for token efficiency), and established the **ai-tools** section in the devtools repository as a team-wide hub for shared prompts, agent tasks, and workflows across Claude, Cursor, and Gemini. Many of these projects were deliberately short-lived experiments — each one explored a different facet of AI engineering (local STT, token routing, agentic CI, RAG architectures) and the learnings fed directly into the production tools that survived.
+* **AI Ecosystem Breadth:** Beyond the production tools, I systematically explored different facets of AI engineering through targeted POCs — each one designed to answer a specific question and feed learnings into production decisions:
+  - **ai-midstream-integration-chatbox** (51 commits): unified Q&A chatbot with RAG + live MCP tools for Jira, Confluence, GitLab, GitHub, and Google Docs
+  - **ai_midstream_lib**: reusable patterns library for Red Hat AI Integration agents
+  - **hybrid-llm**: local/cloud LLM routing — proved a mobile device can offload workloads from cloud GPU, exploring cost-efficient inference
+  - **voice-assistant**: Whisper.cpp STT with hotword detection, learning commands locally for token efficiency
+  - **auto-todo**: fully autonomous agentic development loop — AI reads codebase, writes code, opens PRs, auto-fixes on test failure
+  - **dual-llm-chat**, **source-pad**: multi-model orchestration exploring how different models complement each other
+  - Established the **ai-tools** section in the devtools repository as a team-wide hub for shared prompts, agent tasks, and workflows across Claude, Cursor, and Gemini.
+  
+  This is an engineer's lab notebook, not abandoned code — each experiment informed architectural decisions in the production tools that followed.
 
 > *"Amos has had some great ideas and there is code to back it too."* — **Wes Hayutin**
 > *"This work was vital for improving the quality and velocity of docs creation."* — **Daniel Gur**
