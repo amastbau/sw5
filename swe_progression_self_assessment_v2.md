@@ -153,26 +153,37 @@
 
 ---
 
-## Official Performance History
+## Performance History
+
+**Quarterly performance (manager evaluations):**
+
+| Quarter | Manager | VIC % | Manager Highlight |
+|---------|---------|-------|-------------------|
+| **Q2 2025** | Wesley Hayutin | **150%** | *"Amos was key this quarter... FIXED BUGS in OADP and in Velero. Spot on performance and I could not ask for anything more."* |
+| Q1 2025 | Wesley Hayutin | 100% | Upstream Velero PRs submitted, OADP 1.5 preparation |
+| Q4 2024 | Wesley Hayutin | 95% | *"Very nice work... Amos lead the effort to create a library of backups... This is quite critical."* |
+| Q3 2024 | Aziza Karol | 90% | *"Your engagement on Slack channel and providing face-to-face guidance to Solution Architects is awesome."* |
+| Q2 2024 | Aziza Karol | 90% | OADP release quality, KubeVirt test coverage |
+| Q1 2024 | Aziza Karol | 90% | OADP 1.3.x delivery |
+| Q3 2021 | Daniel Gur | **127%** | MTV API framework peak delivery |
+| Q2 2021 | Daniel Gur | 110% | MTV framework established |
+
+**Career VIC average: ~97%** (23 quarters). Peaks at **150%** (Q2 2025 — Velero upstream delivery) and **127%** (Q3 2021 — MTV framework peak).
+
+**2025 H2 – 2026 Q1 (80%):** Lower VIC during team transition — split across OADP and AAET simultaneously, self-investing in AI skills on personal time. Manager acknowledged context.
+
+**Annual talent assessments:**
 
 | Period | Manager | What | How | Overall |
 |--------|---------|------|-----|---------|
 | Q4 2023 | Aziza Karol | Meets Expectations | **Surpasses Expectations** | Successful Performer |
 | H2 2024 | Wesley Hayutin | Meets Expectations | Meets Expectations | Successful Performer |
 
-**Quarterly highlights (from manager reviews):**
-- **Q3 2024 (Aziza):** *"Your engagement on Slack channel and providing face-to-face guidance to Solution Architects is awesome."* — Recognized for cross-team engagement and customer-facing support.
-- **Q4 2024 (Wes):** *"Very nice work here Amos!... Amos lead the effort to create a library of backups from past releases... This is quite critical."* — Recognized for business-critical backup library.
-- **Q2 2025 (Wes, Slack):** *"Amos was key this quarter... wrote new tests, updated old tests, automated tests, found bugs, FIXED BUGS in OADP and in Velero. Spot on performance and I could not ask for anything more."* — **Highest recognition received.** Aligns with 150% VIC and upstream Velero delivery.
-- **FY2021 (Daniel Gur):** Promoted from Software Quality Engineer to Senior SQE within ~3 years. Goals: "Main Automation contributor for MTV API area" — achieved (216 commits, 62% of repo).
+**Career progression:** Software Quality Engineer (2020) → **Senior SQE** (by 2023, ~3 years) → SWE transition in progress (2025–2026). FY2021 goal "Main Automation contributor for MTV API area" — achieved (216 commits, 62% of repo).
 
 **Manager highlights from quarterly reviews:**
 - *"Amos lead the effort to create a library of backups from past releases... This is quite critical as some businesses have 2-3 year compliance requirements."* — Wes Hayutin (Q4 2024)
 - *"Amos was key this quarter... FIXED BUGS in OADP and in Velero... Spot on performance and I could not ask for anything more."* — Wes Hayutin (Q2 2025, Slack)
-
-**Performance trajectory:**
-- Career VIC average ~97%, with peaks at 127% (2021) and 150% (Q2 2025 — Velero upstream delivery)
-- 2025 H2 – 2026 Q1: Lower VIC during team transition — split across OADP and AAET simultaneously, self-investing in AI skills on personal time. Manager acknowledged context.
 
 **Self-identified development areas (Q4 2024 review):**
 - Improving WIP management to avoid overcommitting to parallel priorities
