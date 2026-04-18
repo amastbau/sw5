@@ -24,21 +24,17 @@ Previously: Intel (chip design CAD), Orange (cross-platform automation), Forcepo
 
 ## Red Hat Job Description / Experience Entry
 
-**Senior Software Engineer**
+**Software Engineer** (previously Senior Software Quality Engineer)
 Red Hat · Full-time
-Nov 2025 – Present
-
-Agentic & AI Engineering Tools (AAET) / AI Platform Core Components (AIPCC) within Red Hat AI Engineering.
+May 2020 – Present
 
 - Building agentic E2E testing and cluster automation for Red Hat's AI platform (RHOAI)
-- Contributed upstream Go code to Velero and KubeVirt plugin, merged in official releases
-- Exploring AI-assisted engineering workflows (RAG, CrewAI, LangChain) to inform production tooling
-
-Previously at Red Hat (May 2020 – Nov 2025) as Senior Software Quality Engineer:
 - Created and led multiple test automation frameworks adopted as production standards across teams
+- Contributed upstream Go code to Velero and KubeVirt plugin, merged in official releases
 - Owned OpenShift Virtualization data protection testing across 3 major OADP releases
 - Contributed upstream to Velero, KubeVirt, OpenShift, and Konveyor ecosystems
+- Exploring AI-assisted engineering workflows (RAG, CrewAI, LangChain) to inform production tooling
 - Mentored engineers toward promotion, delivered training for cross-functional teams
-- 588 merge requests across GitLab and GitHub (306 merged), 22 upstream PRs merged across Velero, KubeVirt, OpenShift, and Konveyor
+- 588 merge requests across GitLab and GitHub (306 merged), 22 upstream PRs merged
 - 42 peer recognitions (Red Hat Reward Zone)
 
