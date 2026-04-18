@@ -156,7 +156,7 @@ Each project deliberately explored a different facet of AI engineering (local in
   - `kubevirt/kubevirt-velero-plugin` — 4 PRs (1 merged: #349, in v0.8.0) + 1 issue
   - `RedHatQE/openshift-python-wrapper` — 7 PRs (6 merged, MTV resource handlers)
   - `konveyor/tackle-ui-tests` — 7 PRs (4 merged)
-  - `konveyor/tackle-api-tests` — 5 PRs (3 merged)
+  - `konveyor/tackle-api-tests` — 5 PRs (3 merged) — mentored mguetta and helped initiate the project
   - `konveyor/tackle2-hub` — 3 PRs (3 merged)
   - `openshift/oadp-operator` — 1 PR
   - `kubev2v/forklift-ui` — 1 PR
