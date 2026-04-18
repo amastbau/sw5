@@ -35,7 +35,7 @@
     - **Backup library test suite** — 64+ commits (sole contributor to backuplib tests). Built and maintained the entire `backup_lib_test.go` suite across 10+ branches.
     - Note: The older `e2e/kubevirt/` dir was created by mperetz (2022); Amos created the newer `e2e/kubevirt-plugin/` dir (2024) for the plugin-specific test suite.
 
-* **Agentic E2E Framework (In Progress):** Architecting the Agentic E2E framework for RHOAI Summit 2026. Jira: RHAIENG-3688 (Critical), RHAIENG-3923.
+* **Agentic E2E Smoke Test Pipeline (Delivered):** Built and delivered the agentic E2E smoke test CI pipeline into the team's shared `redhat/ai/midstream-integration/devtools` repo (11 commits, 3rd largest contributor at 11%). Three-tier test framework (minimal/medium/full) covering operators, KServe, vLLM, Kagenti, MCP Gateway, GPU nodes, LlamaStack. GitLab CI with Slack notifications, UBI9 containers. Validated on real cluster: 11 passed, 6 skipped, 1 xfailed. Jira: RHAIENG-3688 (Critical), RHAIENG-3923.
 
 * **ADR: AI-Assisted Code Reviews** — Reviewed and contributed to ADR for AI-assisted code reviews across AAET GitLab repositories (AAET-MI004, authored by Kamesh Akella). Provided input on local CLI tooling and CI workflow patterns. Jira: RHAIENG-2757.
 
@@ -202,6 +202,7 @@
 |-------------|-------|--------|
 | GitLab CEE MRs authored | 485 (370 excl. auto-generated) | GitLab API |
 | GitHub repos | 47 (17 forks with 0 upstream contributions, 30 personal/POC) | GitHub API |
+| `redhat/ai/midstream-integration/devtools` (gitlab.com) | 11 commits (3rd contributor, 11%) | Agentic smoke test pipeline | Kamesh (36), pditmars (12) |
 | Upstream items (Velero ecosystem) | 3 merged PRs + 3 issues + 7 iteration PRs = 13 items | GitHub API |
 | Upstream merged PRs (all projects) | 22 (across Velero, kubevirt, openshift-python-wrapper, konveyor) | GitHub API |
 
