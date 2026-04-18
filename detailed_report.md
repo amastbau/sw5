@@ -58,6 +58,11 @@ Director of AI Engineering at Red Hat — skeptical but fair, requiring evidence
 | 11 | **Local: Quarterly Goals Q4 2024** | `/home/amos/relo/Mastbaum, Amos  Quarterly Connection_ Goals and Performance  09_09_2025.pdf` | ✅ Read | Local filesystem |
 | 12 | **Local: Quarterly Career Q3 2024** | `/home/amos/relo/Mastbaum, Amos  Quarterly Connection and Career Development  09_09_2025.pdf` | ✅ Read | Local filesystem |
 | 13 | **Local: Early Review FY2021** | `/home/amos/relo/Mastbaum, Amos  Quarterly Performance & Development Discussion  09_09_2025.pdf` | ✅ Read | Local filesystem |
+| 14 | **Google Doc: 1:1 Amos/Chris** | `Notes - 1:1 - Amos / Chris` (Nov 2025–Feb 2026) | ✅ Read | google-docs-mcp |
+| 15 | **Google Doc: 1:1 Amos/Klara** | `Amos Mastbaum / Klara Bezdekova (1x1)` (Apr 2026) | ✅ Read | google-docs-mcp |
+| 16 | **Google Doc: ADR AI Code Reviews** | `AAET-MI004: AI Assisted Code Review` (Jan 2026) | ✅ Read | google-docs-mcp |
+| 17 | **Google Doc: Sprint Demo** | `Sprint Demo - 2026/02/19` (Feb 2026) | ✅ Read | google-docs-mcp |
+| 18 | **Google Doc: AI Midstream Team Charter** | `AI Midstream Integration Team Charter` | ✅ Read | google-docs-mcp |
 
 ### Connectivity Issue Encountered
 - **GitLab CEE** initially failed with `ENOTFOUND gitlab.cee.redhat.com` — resolved by user connecting to Red Hat VPN.
@@ -810,6 +815,67 @@ The performance reviews **reinforce the L4 assessment** and add important contex
   - Red Hat (2020–present) — Senior SQE
 - **Certifications:** Oracle SQL/PLSQL, MCSE, ISTQB, Control-M Expert
 - **Education:** Coursework at Open University of Israel (CS and Math)
+
+---
+
+## 11.3 Google Docs Evidence
+
+**Total Google Drive files found mentioning Amos: 50+ documents** including meeting transcripts (Gemini Notes), 1:1 documents, team charters, ADRs, sprint demos, and scrum agendas.
+
+#### Key Documents Read
+
+**1:1 Amos / Chris Bynum (Nov 2025 – Feb 2026)**
+- Q1 2026 SMART goals documented: (1) Complete AAET onboarding, (2) Build AI-powered onboarding portal
+- Stay interview: Values Red Hat for "Strong Team & Managers, Open Source, Providing Real Value, Office Flex, Career Path, Relocation Options"
+- Manager feedback: "positive feedback on the RAG chatbox, but no correction feedback yet"
+- Self-identified: "Still doing some work for OADP, more than I first anticipated"
+- Career goals on record with new manager
+
+**1:1 Amos / Klara Bezdekova (Apr 2026)**
+- **"Movement readiness to Software Engineer"** — active transition discussion
+- Integration into Model Validation team
+- First SWE task assigned: DNS timezone fix in Terraform
+- Research areas: GCP to IBM migration, logging consolidation via agentic solutions
+- GPUaaS as another working group
+- Meeting frequency: biweekly 1:1s
+
+**ADR: AI-Assisted Code Reviews (AAET-MI004, Jan 2026)**
+- **Authored by Amos** — Architecture Decision Record for AI-assisted code reviews
+- Reviewed by Ken, Courtney, Pete, Kamesh
+- Proposes GEMINI-based automated reviews in GitLab CI/CD
+- Two-phase approach: synthesis + detailed review
+- Amos's input: "I usually like to be able to run any ci action locally"
+- **Significance:** This is a cross-team technical influence artifact — an ADR adopted by the team
+
+**Sprint Demo (Feb 2026)**
+- cc-rosa-rhoai tool demonstrated in team sprint demo
+- Session took 2.5 hours vs 15 min manual — established performance benchmark
+- Issues found: sticking behavior, GPU polling, route confusion
+- Tool praised for session summary and debugging capability
+- Action items assigned to Amos
+
+**Other Relevant Docs Found (not read in detail)**
+- OADP QE weekly mtg (780KB, since 2021) — long-running meeting notes
+- OADP Scrum Agenda (524KB, since Oct 2025) — Wes Hayutin's scrum notes
+- OADP Office Hours / QE / Doc Sync (384KB, since Feb 2023)
+- Notes - MTV Sync (1.2MB, since Aug 2024)
+- Notes - DevOps Team Weekly (647KB, since Feb 2025)
+- Notes - RHAI-Midstream-QE-Sync (53KB, since Jul 2025)
+- AI Midstream Integration Team Charter (10MB)
+- Plan: Summit 2026 Test/Demo Clusters
+- GPUaaS Kueue Preemption Demo session log (authored by Amos)
+- AI Tools Workshop Series #2 notes
+- Multiple OADP Scrum Gemini transcripts mentioning Amos
+
+#### Impact on Assessment
+
+The Google Docs evidence adds three data points not found in other sources:
+
+1. **The SWE transition is officially in motion** — "movement readiness to Software Engineer" in a 1:1 with Klara (Apr 2026), first SWE task assigned
+2. **The ADR is a real influence artifact** — Amos authored an Architecture Decision Record that was reviewed and adopted by the team. This is the strongest "technical decision-making" evidence found in any source.
+3. **The AI chatbot got positive manager feedback** but without adoption metrics — confirms awareness, not adoption
+
+These strengthen the L4 case but don't change the level assessment. The ADR is the closest thing to L5-scope influence found anywhere, but a single ADR within one team doesn't constitute "driving significant technical change across the organization."
 
 ---
 

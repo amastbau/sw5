@@ -26,6 +26,10 @@
 
 * **Agentic E2E Framework (In Progress):** Architecting the Agentic E2E framework for RHOAI Summit 2026. Jira: RHAIENG-3688 (Critical), RHAIENG-3923.
 
+* **ADR: AI-Assisted Code Reviews** — Authored Architecture Decision Record for AI-assisted code reviews across AAET GitLab repositories. Reviewed and adopted by the team (Ken, Courtney, Pete, Kamesh). Proposes automated code analysis with GEMINI models integrated into GitLab CI/CD, with human reviewer final authority. (Google Doc: AAET-MI004)
+
+* **Active SWE Transition:** "Movement readiness to Software Engineer" discussed in 1:1 with Klara Bezdekova (Apr 2026). First SWE task assigned: DNS timezone fix in Terraform. Integration into Model Validation team. Research: GCP to IBM migration, logging consolidation via agentic solutions, GPUaaS working group.
+
 > *"Amos leveled up this quarter. Really enjoying watching Amos grow into new areas here. Really nice debug, investigation, development and collaboration!!"* — **Wes Hayutin (Manager)**
 
 ---
@@ -91,7 +95,9 @@
 * **cc-rosa-rhoai**: ROSA HCP cluster lifecycle automation (GitLab CEE, internal).
 * **ai-tools hub**: Shared section in devtools repository for cross-team AI workflow documentation.
 
-**Gap acknowledged:** These are POC/experimental projects. Measuring team adoption and documenting efficiency gains is a priority for 2026 H2.
+* **cc-rosa-rhoai Sprint Demo** (Feb 2026): Demonstrated ROSA tool in team sprint demo. Session established performance benchmarks (2.5 hours vs 15 min manual). Tool's session summary capability praised for debugging and documentation value.
+
+**Gap acknowledged:** These are POC/experimental projects. Manager gave "positive feedback on the RAG chatbox" (1:1 with Chris Bynum, Nov 2025) but no team adoption metrics yet. Measuring adoption is a priority for 2026 H2.
 
 > *"Amos has had some great ideas and there is code to back it too."* — **Wes Hayutin**
 
