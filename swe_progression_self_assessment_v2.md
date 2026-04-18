@@ -83,7 +83,7 @@
 * **Promotion Impact:** Shahaf Bahar explicitly credited my mentorship as instrumental in their recent promotion.
 * **Technical Coaching:** Guided engineers on Go framework usage, Python test architecture, and AI tool adoption (Slack evidence: directing colleagues to specific functions, explaining patterns).
 * **Docs Training:** Organized and delivered multi-day OADP training for MMS documentation writers, including homework exercises (`qe-docs-train` repo).
-* **AI Coaching:** Coaching engineers across teams (devtools, ROSA, agents) on verification-first AI workflows.
+
 
 > *"Thanks to your mentorship, I've been able to overcome challenges and achieve new heights, culminating in my recent promotion."* — **Shahaf Bahar**
 > *"I couldn't think of myself for where I am right now without you."* — **Aadarsh Raj**
