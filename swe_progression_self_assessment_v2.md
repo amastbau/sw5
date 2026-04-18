@@ -65,6 +65,7 @@
 * **Review Authority:** Reviewed 137+ MRs across 7+ team members and 55+ OADP documentation PRs.
 * **Cross-Platform Test Coverage:** Test matrices spanning AWS, GCP, Azure, ODF/CephFS, MinIO, FIPS, SNO, proxy, cross-cluster, and KubeVirt (verified via Jira: 20+ automated test execution tickets).
 * **Automation:** Built jira-auto tooling for automated test result tracking from CI pipelines.
+* **Cross-Team Bug Reporting:** Filed 28+ bugs to CNV developers (Sam Lucidi, Fabien Dupont, Piotr Kliczewski, others) covering VMIO, warm migration, VMware source, storage class, and hot-plug disk issues. 6 documentation bugs filed to Avital Pinnick. 1 OCPBUGS filed (CRC virsh auth).
 
 > *"Thank you for your hard work, attention to detail, and commitment to delivering a high-quality OADP 1.3 and timely release."* — **Aziza Karol**
 
