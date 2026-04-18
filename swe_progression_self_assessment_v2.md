@@ -153,6 +153,10 @@
 - *"Amos lead the effort to create a library of backups from past releases... This is quite critical as some businesses have 2-3 year compliance requirements."* — Wes Hayutin (Q4 2024)
 - *"Amos was key this quarter... FIXED BUGS in OADP and in Velero... Spot on performance and I could not ask for anything more."* — Wes Hayutin (Q2 2025, Slack)
 
+**Performance trajectory:**
+- Career VIC average ~97%, with peaks at 127% (2021) and 150% (Q2 2025 — Velero upstream delivery)
+- 2025 H2 – 2026 Q1: Lower VIC during team transition — split across OADP and AAET simultaneously, self-investing in AI skills on personal time. Manager acknowledged context.
+
 **Self-identified development areas (Q4 2024 review):**
 - Improving WIP management to avoid overcommitting to parallel priorities
 - Enhancing communication on task statuses and interdependencies
