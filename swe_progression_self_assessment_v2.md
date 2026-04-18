@@ -226,7 +226,7 @@
 | Technical Impact | L4 | Need to drive architecture across multiple subsystems, not just contribute |
 | Software Quality | L4/Emerging L5 | Need to establish practices for large-scale systems across multiple teams |
 | Collaboration | L4 | Need to lead community initiatives, not just contribute |
-| Mentorship | L4 | Need to mentor principal engineers, role-model mentorship at org level |
+| Mentorship | **L4 met** | L4 requirement satisfied — Shahaf's promotion, cross-team coaching, docs training |
 | Business Impact | L4 | Need to drive initiatives across the organization |
 | AI/Agentic | Emerging L5 | Need adoption metrics and team-wide process changes |
 | SDLC | L4 | Need to drive SDLC evolution across the organization |
