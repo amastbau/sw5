@@ -55,7 +55,7 @@
 ## 2. Technical Acumen & Polyglot Expertise
 **L4 Requirement:** An expert in multiple areas of the tech stack who leads the design of multi-component systems.
 
-* **Languages:** Go (upstream contributions), Python (primary — frameworks, AI tools), Bash, Ansible, Groovy, Java (prior: Forcepoint), C#/.NET (prior: Orange).
+* **Languages:** Go (upstream Velero/kubevirt-velero-plugin code + oadp-e2e-qe test suites — 85+ commits), Python (primary — frameworks, AI tools, automation), Bash, Ansible, Groovy, Java (prior: Forcepoint), C#/.NET (prior: Orange).
 * **Infrastructure:** Kubernetes, OpenShift, OCP-Virt, Velero, OADP, CSI, Restic, Kopia, S3/MinIO, ROSA, Jenkins (JCasC), GitLab CI.
 * **AI/ML Stack:** ChromaDB, LlamaIndex, Llama Stack, VLLM, LLaMA.cpp, PyTorch, Whisper.cpp, FastAPI.
 * **Career breadth:** Intel chip design CAD (2005–2008) → Orange cross-platform automation (2009–2013) → Forcepoint enterprise security (2014–2018) → Red Hat cloud-native (2020–present).
