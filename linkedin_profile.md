@@ -45,4 +45,3 @@ Previously at Red Hat (May 2020 – Nov 2025) as Senior Software Quality Enginee
 - Mentored engineers toward promotion, delivered multi-day training for documentation teams
 - 42 Red Hat Reward Zone recognitions across collaboration, team focus, and encouragement
 
-Technologies: Go, Python, Bash, Terraform, Kubernetes, OpenShift, Velero, OADP, KubeVirt, ROSA, Llama Stack, CrewAI, LangChain, Claude Code, Jenkins, GitLab CI
