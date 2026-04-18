@@ -2,7 +2,7 @@
 
 ## Headline
 
-Senior Software Engineer at Red Hat | AI-Assisted Engineering | Cloud-Native Data Protection | 30 Years in Tech
+Senior Software Engineer at Red Hat | AI-Assisted Engineering | Cloud-Native & Virtualization | 30 Years in Tech
 
 ---
 
