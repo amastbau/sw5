@@ -113,8 +113,8 @@
 **Personal POC/experimental (no verified team adoption):**
 
 * **midstream-integration-chatbot**: RAG chatbot built on Llama Stack to "eat our own dog food" — validating Red Hat's AI stack internally. Includes detailed trace exposing RAG and LLM payloads for full transparency. Demoed to team with positive reviews. Manager feedback: "positive feedback on the RAG chatbox" (1:1 with Chris Bynum, Nov 2025). Underwent security review. Not in team production use.
-* **test-analyser**: Claude/Vertex AI regression analysis — aimed at reducing manual triage from hours to minutes. Motivation: QE teams spend disproportionate time diagnosing flaky tests; automated classification changes the economics of test maintenance.
-* **classifier-eng**: FastAPI log classifier for CI pipelines — automated categorization of failure patterns. Motivation: pattern recognition across thousands of CI runs is something humans do poorly at scale.
+* **test-analyser** (Jul 2025), **classifier-eng** (Jul 2025): Early AI experiments for regression analysis and log classification, built before current agentic tooling existed. Designed to be easily pluggable into CI pipelines. Motivation: QE teams spend disproportionate time diagnosing flaky tests; automated classification changes the economics of test maintenance.
+
 * **hybrid-llm**: Local/cloud LLM routing proof-of-concept — demonstrated that a mobile device (Samsung 24FE) can offload specific workloads from cloud providers. Motivation: exploring cost-efficient AI inference for engineers who need AI assistance without enterprise GPU budgets.
 * **auto-todo**: Agentic GitHub issue handling — AI agents autonomously read codebase, write code, open PRs, auto-fix on test failure. Motivation: testing the boundaries of fully autonomous development loops with verification gates.
 * **dual-llm-chat**, **source-pad**: Multi-model orchestration and source-aware chat experiments exploring how different models complement each other for different task types.
