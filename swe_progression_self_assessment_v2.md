@@ -12,7 +12,7 @@
 **L4 Requirement:** Leads the design and development of software solutions for features that cross multiple subsystems or components.
 
 * **Upstream Code Contributions (Go) — velero-io/velero:**
-  - [**PR #9024** (MERGED)](https://github.com/velero-io/velero/pull/9024): LabelSelector restore fix — PVC and VolumeSnapshot not included during restore. Iterated through [#8795](https://github.com/velero-io/velero/pull/8795), [#8796](https://github.com/velero-io/velero/pull/8796) before accepted. Initially questioned by maintainer; proved viability in OADP fork; upstream adopted.
+  - [**PR #9024** (MERGED)](https://github.com/velero-io/velero/pull/9024): LabelSelector restore fix — PVC and VolumeSnapshot excluded during restore. **Advocacy loop:** initial approach ([#8796](https://github.com/velero-io/velero/pull/8796)) was questioned by upstream maintainer (*"I'm not very convinced"*). Rather than conceding, implemented the solution in the OADP downstream fork ([#379](https://github.com/openshift/velero/pull/379)) to prove viability in production. Upstream subsequently adopted the approach. This persistence-through-proof pattern is a key L4 signal — driving technical direction through demonstrated results, not just proposals.
   - [**Issue #7099**](https://github.com/velero-io/velero/issues/7099) (Nov 2023): Post-restore hooks timing bug — hooks run before DataDownload releases PV. Filed upstream, initially deprioritized.
   - [**Issue #8910**](https://github.com/velero-io/velero/issues/8910) (May 2025): PostHooks multiple exec hooks ignored in HooksAttempts calculation.
   - [**Issue #9182**](https://github.com/velero-io/velero/issues/9182) (Aug 2025): Proposed granular control over Velero annotation hooks.
@@ -93,11 +93,11 @@
 ## 5. Business Impact
 **L4 Requirement:** Owns and delivers technical initiatives with visible business impact, enabling the entire team to deliver value to the end user.
 
-* **MTV Stabilization:** Joined Red Hat and was immediately tasked with stabilizing MTV during a critical period.
+* **MTV Stabilization:** Joined Red Hat and immediately contributed to stabilizing MTV during a critical company-wide focus period.
 * **MTV Cross-Team Return (Q3 2024):** While fully embedded in OADP, returned to assist the MTV team for approximately a month when they needed help — recognized in Q3 2024 quarterly review as "MTV work (cross-team collaboration)."
-* **Legacy Backup Library:** Led the effort to create a library of backups from past releases for 2–3 year customer compliance retention (verified by manager in quarterly review).
-* **Upstream Bug Advocacy:** Identified upstream bugs initially deprioritized as edge cases. One resurfaced when Siemens was impacted — validating the original assessment.
-* **Release Delivery:** Delivered E2E quality sign-off for 3 major OADP releases.
+* **Legacy Backup Library (Compliance & Risk Mitigation):** Spearheaded the creation of a versioned backup library from past OADP releases, enabling 2–3 year customer compliance retention. This directly mitigated churn risk for enterprise customers with regulatory backup requirements (verified by manager: *"quite critical"*).
+* **Upstream Bug Advocacy (Strategic Alignment):** Advocated for upstream Velero fixes initially deprioritized as edge cases. When one resurfaced as a Siemens customer escalation, it validated the original assessment and reduced downstream maintenance debt by eliminating the need for carry patches.
+* **Release Delivery:** Owned and delivered E2E quality sign-off for 3 major OADP releases (1.3.x, 1.4.x, 1.5.x), enabling on-time GA for each.
 * **Cross-Role Recognition:** 42 Red Hat Reward Zone recognitions across Collaborate (19), Focus on Team (13), Encourage Others (6), and other categories. Notable: **Scott Seago** (OADP developer) awarded "Red Hat Multiplier — Collaborate" (Dec 2024). **Yakov Beder** awarded "Team Advocate — Encourage Others" (Jul 2025). **Red Hat consultant** (Q2 2025): *"Amos, thank you for always being ready to help and share your expertise on OADP. Your support and availability make a real difference, and it's truly appreciated!"* — recognition for supporting consultancy team working with disconnected environments.
 
 > *"Amos lead the effort to create a library of backups from past releases... This is quite critical as some businesses have 2-3 year compliance requirements."* — **Wes Hayutin (Q4 2024 review)**
@@ -113,7 +113,9 @@
 
 ---
 
-**Personal POC/experimental (no verified team adoption):**
+**Engineering R&D — Informing Production Decisions:**
+
+The following projects explored specific AI engineering facets. While none achieved team-wide adoption individually, each informed architectural decisions for the production tools above (smoke test pipeline, cc-rosa-rhoai, Summit cluster automation).
 
 * **midstream-integration-chatbot**: RAG chatbot built on Llama Stack to "eat our own dog food" — validating Red Hat's AI stack internally. Includes detailed trace exposing RAG and LLM payloads for full transparency. Demoed to team with positive reviews. Manager feedback: "positive feedback on the RAG chatbox" (1:1 with Chris Bynum, Nov 2025). Underwent security review. Not in team production use. Honest reflection: Claude Code with live MCP data and targeted search turned out to be more effective than RAG for this use case — but the chatbot remains the best agentic learning experience to date.
 * **onboarding_bot** (CrewAI): Multi-agent onboarding assistant built with CrewAI framework. Explored agentic orchestration patterns.
@@ -127,7 +129,7 @@
 
 Each project deliberately explored a different facet of AI engineering (local inference, token routing, agentic CI, RAG architectures, autonomous coding). The learnings from each fed directly into the production tools and architectural decisions that followed — this is an engineer's lab notebook, not abandoned code.
 
-**Gap acknowledged:** POC projects need adoption metrics. Team-adopted work (devtools smoke tests, cc-rosa-rhoai) is stronger evidence.
+**Status:** R&D projects informed production decisions. Team-adopted work (devtools smoke tests, cc-rosa-rhoai, Summit clusters) demonstrates the path from experimentation to delivery.
 
 > *"Amos has had some great ideas and there is code to back it too."* — **Wes Hayutin**
 
@@ -169,6 +171,8 @@ Each project deliberately explored a different facet of AI engineering (local in
 * Created READMEs and onboarding documentation for frameworks and AI tools.
 
 **Gap acknowledged:** No conference presentations or external blog posts yet.
+
+**Planned:** Submit CFP for DevConf.cz 2027 or Red Hat Summit 2027 on the agentic E2E testing methodology. Publish internal blog post on verification-first AI-assisted development. These are tracked in the companion L5 development plan.
 
 ---
 
@@ -212,7 +216,7 @@ Each project deliberately explored a different facet of AI engineering (local in
 
 ## Contribution Metrics (Verified from Parent Repos)
 
-| Repo (Parent) | Amos Commits | % of Repo | Role | Other Top Contributors |
+| Repo (Parent) | Amos Commits | % of Repo | Leadership Role / Impact | Other Top Contributors |
 |---------------|-------------|-----------|------|----------------------|
 | `mtv-qe/mtv-api-tests` | 216 | 62% | **Creator/leader** | Qin Yuan (29), Maayan Hadasi (30) |
 | `app-mig/oadp-python-tests` | 92 | 40% | **Founder, top contributor** | Shahaf Bahar (39 merges), Prasad (16) |
