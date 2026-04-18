@@ -159,8 +159,8 @@ Each project deliberately explored a different facet of AI engineering (local in
   - `openshift/oadp-operator` — 1 PR
   - `kubev2v/forklift-ui` — 1 PR
   - `red-hat-data-services/gpu-observability-dashboard` — 1 PR (open)
-  - `red-hat-data-services/gpu-observability-dashboard` — 1 PR open ([#3](https://github.com/red-hat-data-services/gpu-observability-dashboard/pull/3), GPU Assistant with live Thanos + K8s API + Kueue workload board — AIPCC work)
   - `openshift/oadp-operator` — 1 PR ([#1218](https://github.com/openshift/oadp-operator/pull/1218), product operator code)
+  - `red-hat-data-services/gpu-observability-dashboard` — 1 PR open ([#3](https://github.com/red-hat-data-services/gpu-observability-dashboard/pull/3), AI-enhanced GPU dashboard — attempted generic solution for a feature request, not yet reviewed by team)
   - `Jounce-IO/iac-sandbox` — 1 PR ([#59](https://github.com/Jounce-IO/iac-sandbox/pull/59), Terraform)
   - `opendatahub-io/llama-stack-demos` — 1 PR open (#327)
   - `yuval-harpaz/alarms` — 3 PRs (3 merged, personal/community)
