@@ -19,7 +19,10 @@
   - `oadp-python-tests` — **Founded** (92 commits, ~40% of repo). Top contributor. Shahaf Bahar became 2nd contributor (39 merges). Still the production standard.
   - `openshift-adp-python-wrapper` — **Co-founded** (52 contributions, 32%). 26 merged PRs. Others: sbahar619 (57), mperetzred (41).
   - `oadp-apps-deployer` — 2nd largest contributor (66 commits, ~21% merge share). Prasad Joshi leads (52 merges). Established Ansible/KubeVirt role patterns.
-  - `oadp-e2e-qe` — Contributor (85 commits, ~7.6% merge share). Prasad (205+), Sachin (99), Shahaf (99) are larger contributors.
+  - `oadp-e2e-qe` — Contributor (85 commits, ~7.6% overall merge share), but **owns two subsystems within the repo:**
+    - **`e2e/kubevirt-plugin/`** — Created this test suite (commit `fa294b76`, 325 lines, 3 files). 2 of 3 non-merge commits are Amos's.
+    - **Backup library test suite** — 64+ commits (sole contributor to backuplib tests). Built and maintained the entire `backup_lib_test.go` suite across 10+ branches.
+    - Note: The older `e2e/kubevirt/` dir was created by mperetz (2022); Amos created the newer `e2e/kubevirt-plugin/` dir (2024) for the plugin-specific test suite.
 
 * **Agentic E2E Framework (In Progress):** Architecting the Agentic E2E framework for RHOAI Summit 2026. Jira: RHAIENG-3688 (Critical), RHAIENG-3923.
 
@@ -158,7 +161,7 @@
 | `app-mig/oadp-python-tests` | 92 | 40% | **Founder, top contributor** | Shahaf Bahar (39 merges), Prasad (16) |
 | `oadp-qe/openshift-adp-python-wrapper` | 52 | 32% | **Co-founder** | sbahar619 (57), mperetzred (41) |
 | `app-mig/oadp-apps-deployer` | 66 | 21% | 2nd contributor | Prasad Joshi (52 merges) |
-| `app-mig/oadp-e2e-qe` | 85 | 7.6% | Contributor | Prasad (205+), Sachin (99), Shahaf (99) |
+| `app-mig/oadp-e2e-qe` | 85 + 64 backuplib | 7.6% overall, **owns kubevirt-plugin + backuplib suites** | Subsystem owner | Prasad (205+), Sachin (99), Shahaf (99) |
 | `migrationqe/oadp-qe-automation` | 37 | 5% | Contributor | Tareq Alayan (97), Md Nadeem |
 | `migrationqe/migrationqe-automation` | 28 | 2% | Contributor | M Sajid Mansoori, Tareq, Nadeem |
 | `RedHatQE/openshift-python-wrapper` | 9 PRs | 2% | Minor contributor | myakove (1247), rnetser (358) |
