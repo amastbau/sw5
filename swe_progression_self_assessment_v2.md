@@ -138,8 +138,10 @@ Each project deliberately explored a different facet of AI engineering (local in
 ## 7. SDLC
 **L4 Requirement:** Leads the definition and implementation of the SDLC for complex multi-component systems.
 
-* **CI/CD Automation:** 8 commits to `aosqe/jenkins-jcasc-n` (shared Jenkins infra with 2800+ MRs). Built MR_tester integration in oadp-e2e-qe.
-* **Test Execution Automation:** Built jira-auto system for automated Jira issue creation from CI test results.
+* **OADP CI/CD Pipeline (migrationqe-automation):** 31 MRs (17 merged) to the team's Jenkins-based CI/CD pipeline — added GCPS3 support, legacy-aws matrix, RGW backup locations, backup library test stages, kubevirt matrix configs, cross-cluster ginkgo params, Windows VM source deployment, and bucket mirroring. This repo IS the SDLC pipeline for OADP QE.
+* **Jenkins Infrastructure:** 10 MRs (8 merged) to `aosqe/jenkins-jcasc-n` for Jenkins-as-Code configuration. Built MR_tester integration in oadp-e2e-qe for automated test triggering from merge requests.
+* **Test Result Automation:** Built jira-auto system for automated Jira issue creation from CI test results across multiple platform configurations.
+* **Agentic E2E CI (AAET):** Delivered smoke test CI pipeline into `redhat/ai/midstream-integration/devtools` (11 commits) — GitLab CI with Slack notifications, 3-tier test framework, nightly scheduled runs.
 * **Agentic SDLC (Emerging):** Developing a verification-first approach to AI-assisted development. Currently applying in the AAET team.
 
 ---
