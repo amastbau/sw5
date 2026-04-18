@@ -28,16 +28,16 @@
   **Total upstream footprint: 3 merged PRs + 3 issues filed + 7 additional PRs (iterations/drafts) = 13 upstream items across 3 repos.**
 
 * **Framework Creation & Contribution:**
-  - `mtv-api-tests` — **Created and led** (216 commits, 62% of repo). Built VM provider API abstraction layers for VMware and RHV. Production standard for successor team. Other contributors: Qin Yuan (29), Maayan Hadasi (30).
-  - `oadp-python-tests` — **Founded** (92 commits, ~40% of repo). Top contributor. Shahaf Bahar became 2nd contributor (39 merges). Later made the difficult decision to discontinue the repo — maintaining two parallel E2E frameworks (Python + Go) wasn't sustainable. The Go framework (oadp-e2e-qe) became the single standard. In hindsight, AI-assisted code conversion could have migrated all tests, but the consolidation decision was the right call for the team at the time.
-  - `openshift-adp-python-wrapper` — **Co-founded from PR #2** across two repos: `oadp-qe/openshift-adp-python-wrapper` (29 PRs, 22 merged — built project setup, resource handlers, DPA/Backup/Restore API classes, VolumeSnapshot extensions) + `RedHatQE/openshift-python-wrapper` (7 PRs, 6 merged) = **36 PRs total, 28 merged**.
-  - `oadp-apps-deployer` — 2nd largest contributor (66 commits, ~21% merge share). Prasad Joshi leads (52 merges). Established Ansible/KubeVirt role patterns.
-  - `oadp-e2e-qe` — Contributor (85 commits, ~7.6% overall merge share), but **owns two subsystems within the repo:**
+  - [`mtv-api-tests`](https://gitlab.cee.redhat.com/mtv-qe/mtv-api-tests) — **Created and led** (216 commits, 62% of repo). Built VM provider API abstraction layers for VMware and RHV. Production standard for successor team. Other contributors: Qin Yuan (29), Maayan Hadasi (30).
+  - [`oadp-python-tests`](https://gitlab.cee.redhat.com/app-mig/oadp-python-tests) — **Founded** (92 commits, ~40% of repo). Top contributor. Shahaf Bahar became 2nd contributor (39 merges). Later made the difficult decision to discontinue the repo — maintaining two parallel E2E frameworks (Python + Go) wasn't sustainable. The Go framework (oadp-e2e-qe) became the single standard. In hindsight, AI-assisted code conversion could have migrated all tests, but the consolidation decision was the right call for the team at the time.
+  - `openshift-adp-python-wrapper` — **Co-founded from PR #2** across two repos: [`oadp-qe/openshift-adp-python-wrapper`](https://github.com/oadp-qe/openshift-adp-python-wrapper) (29 PRs, 22 merged — built project setup, resource handlers, DPA/Backup/Restore API classes, VolumeSnapshot extensions) + [`RedHatQE/openshift-python-wrapper`](https://github.com/RedHatQE/openshift-python-wrapper) (7 PRs, 6 merged) = **36 PRs total, 28 merged**.
+  - [`oadp-apps-deployer`](https://gitlab.cee.redhat.com/app-mig/oadp-apps-deployer) — 2nd largest contributor (66 commits, ~21% merge share). Prasad Joshi leads (52 merges). Established Ansible/KubeVirt role patterns.
+  - [`oadp-e2e-qe`](https://gitlab.cee.redhat.com/app-mig/oadp-e2e-qe) — Contributor (85 commits, ~7.6% overall merge share), but **owns two subsystems within the repo:**
     - **`e2e/kubevirt-plugin/`** — Created this test suite (commit `fa294b76`, 325 lines, 3 files). 2 of 3 non-merge commits are Amos's.
     - **Backup library test suite** — 64+ commits (sole contributor to backuplib tests). Built and maintained the entire `backup_lib_test.go` suite across 10+ branches.
     - Note: The older `e2e/kubevirt/` dir was created by mperetz (2022); Amos created the newer `e2e/kubevirt-plugin/` dir (2024) for the plugin-specific test suite.
 
-* **Agentic E2E Smoke Test Pipeline (Delivered):** Built and delivered the agentic E2E smoke test CI pipeline into the team's shared `redhat/ai/midstream-integration/devtools` repo (11 commits, 3rd largest contributor at 11%). Three-tier test framework (minimal/medium/full) covering operators, KServe, vLLM, Kagenti, MCP Gateway, GPU nodes, LlamaStack. GitLab CI with Slack notifications, UBI9 containers. Validated on real cluster: 11 passed, 6 skipped, 1 xfailed. Jira: RHAIENG-3688 (Critical), RHAIENG-3923.
+* **Agentic E2E Smoke Test Pipeline (Delivered):** Built and delivered the agentic E2E smoke test CI pipeline into the team's shared [`redhat/ai/midstream-integration/devtools`](https://gitlab.com/redhat/ai/midstream-integration/devtools) repo (11 commits, 3rd largest contributor at 11%). Three-tier test framework (minimal/medium/full) covering operators, KServe, vLLM, Kagenti, MCP Gateway, GPU nodes, LlamaStack. GitLab CI with Slack notifications, UBI9 containers. Validated on real cluster: 11 passed, 6 skipped, 1 xfailed. Jira: RHAIENG-3688 (Critical), RHAIENG-3923.
 
   **Methodology note:** This pipeline was built rapidly using AI-assisted research — agentic exploration across multiple team repos, prompting with proper architectural context, then rigorous human review of every generated artifact. Every line of code was reviewed, understood, and approved before merge. The approach is ~100x faster than manual development, but the human-in-the-loop verification layer is non-negotiable: I question and verify all generated code, and I don't merge what I don't understand. This discipline comes from 30 years of QE mindset — trust no code, regardless of source. Full transparency: even with this rigorous review process, when presenting this document a month later I found claims I couldn't immediately back up. Being accountable for AI-generated artifacts is a skill I'm still developing — and that honesty is part of the methodology.
 
@@ -82,7 +82,7 @@
 * **Promotion Impact:** Shahaf Bahar explicitly credited my mentorship as instrumental in their recent promotion.
 * **Technical Coaching:** Guided engineers on Go framework usage, Python test architecture, and AI tool adoption (Slack evidence: directing colleagues to specific functions, explaining patterns).
 * **Docs Training:** Organized and delivered multi-day OADP training for MMS documentation writers, including homework exercises (`qe-docs-train` repo).
-* **Project Initiation:** Mentored mguetta and helped initiate the `konveyor/tackle-api-tests` project — guided the early architecture and contributed 5 PRs (3 merged) to establish the foundation.
+* **Project Initiation:** Mentored mguetta and helped initiate the [`konveyor/tackle-api-tests`](https://github.com/konveyor/tackle-api-tests) project — guided the early architecture and contributed 5 PRs (3 merged) to establish the foundation.
 
 
 > *"Thanks to your mentorship, I've been able to overcome challenges and achieve new heights, culminating in my recent promotion."* — **Shahaf Bahar**
@@ -140,9 +140,9 @@ Each project deliberately explored a different facet of AI engineering (local in
 **L4 Requirement:** Leads the definition and implementation of the SDLC for complex multi-component systems.
 
 * **OADP CI/CD Pipeline (migrationqe-automation):** 31 MRs (17 merged) to the team's Jenkins-based CI/CD pipeline — added GCPS3 support, legacy-aws matrix, RGW backup locations, backup library test stages, kubevirt matrix configs, cross-cluster ginkgo params, Windows VM source deployment, and bucket mirroring. This repo IS the SDLC pipeline for OADP QE.
-* **Jenkins Infrastructure:** 10 MRs (8 merged) to `aosqe/jenkins-jcasc-n` for Jenkins-as-Code configuration. Built MR_tester integration in oadp-e2e-qe for automated test triggering from merge requests.
+* **Jenkins Infrastructure:** 10 MRs (8 merged) to [`aosqe/jenkins-jcasc-n`](https://gitlab.cee.redhat.com/aosqe/jenkins-jcasc-n) for Jenkins-as-Code configuration. Built MR_tester integration in oadp-e2e-qe for automated test triggering from merge requests.
 * **Test Result Automation:** Built jira-auto system for automated Jira issue creation from CI test results across multiple platform configurations.
-* **Agentic E2E CI (AAET):** Delivered smoke test CI pipeline into `redhat/ai/midstream-integration/devtools` (11 commits) — GitLab CI with Slack notifications, 3-tier test framework, nightly scheduled runs.
+* **Agentic E2E CI (AAET):** Delivered smoke test CI pipeline into [`redhat/ai/midstream-integration/devtools`](https://gitlab.com/redhat/ai/midstream-integration/devtools) (11 commits) — GitLab CI with Slack notifications, 3-tier test framework, nightly scheduled runs.
 * **Agentic SDLC (Emerging):** Developing a verification-first approach to AI-assisted development. Currently applying in the AAET team.
 
 ---
@@ -151,22 +151,22 @@ Each project deliberately explored a different facet of AI engineering (local in
 **L4 Requirement:** Acts as a key representative and leader within the community, advocating for internal or external customer needs.
 
 * **Upstream Contributions (verified merged):**
-  - `oadp-qe/openshift-adp-python-wrapper` — 29 PRs (22 merged)
-  - `velero-io/velero` — 3 PRs (1 merged: #9024) + 3 issues
-  - `openshift/velero` — 4 PRs (1 merged: #379)
-  - `kubevirt/kubevirt-velero-plugin` — 4 PRs (1 merged: #349, in v0.8.0) + 1 issue
-  - `RedHatQE/openshift-python-wrapper` — 7 PRs (6 merged, MTV resource handlers)
-  - `konveyor/tackle-ui-tests` — 7 PRs (4 merged)
-  - `konveyor/tackle-api-tests` — 5 PRs (3 merged) — mentored mguetta and helped initiate the project
-  - `konveyor/tackle2-hub` — 3 PRs (3 merged)
-  - `openshift/oadp-operator` — 1 PR
-  - `kubev2v/forklift-ui` — 1 PR
-  - `red-hat-data-services/gpu-observability-dashboard` — 1 PR (open)
-  - `openshift/oadp-operator` — 1 PR ([#1218](https://github.com/openshift/oadp-operator/pull/1218), product operator code)
-  - `red-hat-data-services/gpu-observability-dashboard` — 1 PR open ([#3](https://github.com/red-hat-data-services/gpu-observability-dashboard/pull/3), AI-enhanced GPU dashboard — attempted generic solution for a feature request, not yet reviewed by team)
+  - [`oadp-qe/openshift-adp-python-wrapper`](https://github.com/oadp-qe/openshift-adp-python-wrapper) — 29 PRs (22 merged)
+  - [`velero-io/velero`](https://github.com/velero-io/velero) — 3 PRs (1 merged: #9024) + 3 issues
+  - [`openshift/velero`](https://github.com/openshift/velero) — 4 PRs (1 merged: #379)
+  - [`kubevirt/kubevirt-velero-plugin`](https://github.com/kubevirt/kubevirt-velero-plugin) — 4 PRs (1 merged: #349, in v0.8.0) + 1 issue
+  - [`RedHatQE/openshift-python-wrapper`](https://github.com/RedHatQE/openshift-python-wrapper) — 7 PRs (6 merged, MTV resource handlers)
+  - [`konveyor/tackle-ui-tests`](https://github.com/konveyor/tackle-ui-tests) — 7 PRs (4 merged)
+  - [`konveyor/tackle-api-tests`](https://github.com/konveyor/tackle-api-tests) — 5 PRs (3 merged) — mentored mguetta and helped initiate the project
+  - [`konveyor/tackle2-hub`](https://github.com/konveyor/tackle2-hub) — 3 PRs (3 merged)
+  - [`openshift/oadp-operator`](https://github.com/openshift/oadp-operator) — 1 PR
+  - [`kubev2v/forklift-ui`](https://github.com/kubev2v/forklift-ui) — 1 PR
+  - [`red-hat-data-services/gpu-observability-dashboard`](https://github.com/red-hat-data-services/gpu-observability-dashboard) — 1 PR (open)
+  - [`openshift/oadp-operator`](https://github.com/openshift/oadp-operator) — 1 PR ([#1218](https://github.com/openshift/oadp-operator/pull/1218), product operator code)
+  - [`red-hat-data-services/gpu-observability-dashboard`](https://github.com/red-hat-data-services/gpu-observability-dashboard) — 1 PR open ([#3](https://github.com/red-hat-data-services/gpu-observability-dashboard/pull/3), AI-enhanced GPU dashboard — attempted generic solution for a feature request, not yet reviewed by team)
   - `Jounce-IO/iac-sandbox` — 1 PR ([#59](https://github.com/Jounce-IO/iac-sandbox/pull/59), Terraform)
-  - `opendatahub-io/llama-stack-demos` — 1 PR open (#327)
-  - `yuval-harpaz/alarms` — 3 PRs (3 merged, personal/community)
+  - [`opendatahub-io/llama-stack-demos`](https://github.com/opendatahub-io/llama-stack-demos) — 1 PR open (#327)
+  - [`yuval-harpaz/alarms`](https://github.com/yuval-harpaz/alarms) — 3 PRs (3 merged, personal/community)
 * **Cross-Team Collaboration:** Active across CNV-QE, OADP, migrationQE, RHAIENG, AIPCC teams.
 * **Internal Channels:** Active contributor in #forum-oadp, #oadp-qe, #oadp-cnv, #forum-mig-velero (OADP era), and #forum-ghostpod, #forum-ai-midstream-integration (AAET era — Summit cluster provisioning, component deployment status, smoke test coordination).
 
@@ -222,17 +222,17 @@ Each project deliberately explored a different facet of AI engineering (local in
 
 | Repo (Parent) | Amos Commits | % of Repo | Leadership Role / Impact | Other Top Contributors |
 |---------------|-------------|-----------|------|----------------------|
-| `mtv-qe/mtv-api-tests` | 216 | 62% | **Creator/leader** | Qin Yuan (29), Maayan Hadasi (30) |
-| `app-mig/oadp-python-tests` | 92 | 40% | **Founder, top contributor** | Shahaf Bahar (39 merges), Prasad (16) |
-| `oadp-qe/openshift-adp-python-wrapper` | 29 PRs (22 merged) | 32% | **Co-founder** | sbahar619 (57), mperetzred (41) |
-| `RedHatQE/openshift-python-wrapper` | 7 PRs (6 merged) | 2% | Contributor (MTV resources) | myakove (1247), rnetser (358) |
-| `app-mig/oadp-apps-deployer` | 66 | 21% | 2nd contributor | Prasad Joshi (52 merges) |
-| `app-mig/oadp-e2e-qe` | 85 + 64 backuplib | 7.6% overall, **owns kubevirt-plugin + backuplib suites** | Subsystem owner | Prasad (205+), Sachin (99), Shahaf (99) |
-| `migrationqe/oadp-qe-automation` | 37 | 5% | Contributor | Tareq Alayan (97), Md Nadeem |
-| `migrationqe/migrationqe-automation` | 28 | 2% | Contributor | M Sajid Mansoori, Tareq, Nadeem |
-| `velero-io/velero` | 1 merged PR + 2 closed PRs + 3 issues filed | <0.1% | Bug fix, advocacy, proposals | 5000+ commits in repo |
-| `openshift/velero` | 1 merged PR + 3 closed PRs | <0.1% | Carry fix + iterations | — |
-| `kubevirt/kubevirt-velero-plugin` | 1 merged PR + 3 closed PRs | ~1% | Bug fix (v0.8.0) + E2E | alromeros, skagan, Lee Yarwood |
+| [`mtv-qe/mtv-api-tests`](https://gitlab.cee.redhat.com/mtv-qe/mtv-api-tests) | 216 | 62% | **Creator/leader** | Qin Yuan (29), Maayan Hadasi (30) |
+| [`app-mig/oadp-python-tests`](https://gitlab.cee.redhat.com/app-mig/oadp-python-tests) | 92 | 40% | **Founder, top contributor** | Shahaf Bahar (39 merges), Prasad (16) |
+| [`oadp-qe/openshift-adp-python-wrapper`](https://github.com/oadp-qe/openshift-adp-python-wrapper) | 29 PRs (22 merged) | 32% | **Co-founder** | sbahar619 (57), mperetzred (41) |
+| [`RedHatQE/openshift-python-wrapper`](https://github.com/RedHatQE/openshift-python-wrapper) | 7 PRs (6 merged) | 2% | Contributor (MTV resources) | myakove (1247), rnetser (358) |
+| [`app-mig/oadp-apps-deployer`](https://gitlab.cee.redhat.com/app-mig/oadp-apps-deployer) | 66 | 21% | 2nd contributor | Prasad Joshi (52 merges) |
+| [`app-mig/oadp-e2e-qe`](https://gitlab.cee.redhat.com/app-mig/oadp-e2e-qe) | 85 + 64 backuplib | 7.6% overall, **owns kubevirt-plugin + backuplib suites** | Subsystem owner | Prasad (205+), Sachin (99), Shahaf (99) |
+| [`migrationqe/oadp-qe-automation`](https://gitlab.cee.redhat.com/migrationqe/oadp-qe-automation) | 37 | 5% | Contributor | Tareq Alayan (97), Md Nadeem |
+| [`migrationqe/migrationqe-automation`](https://gitlab.cee.redhat.com/migrationqe/migrationqe-automation) | 28 | 2% | Contributor | M Sajid Mansoori, Tareq, Nadeem |
+| [`velero-io/velero`](https://github.com/velero-io/velero) | 1 merged PR + 2 closed PRs + 3 issues filed | <0.1% | Bug fix, advocacy, proposals | 5000+ commits in repo |
+| [`openshift/velero`](https://github.com/openshift/velero) | 1 merged PR + 3 closed PRs | <0.1% | Carry fix + iterations | — |
+| [`kubevirt/kubevirt-velero-plugin`](https://github.com/kubevirt/kubevirt-velero-plugin) | 1 merged PR + 3 closed PRs | ~1% | Bug fix (v0.8.0) + E2E | alromeros, skagan, Lee Yarwood |
 
 **Total verified: 588 MRs/PRs across 3 platforms (GitLab CEE: 485, GitHub: 71 upstream + 23 own-repo, GitLab.com: 9). 306 merged. 2020–2026.**
 
@@ -240,7 +240,7 @@ Each project deliberately explored a different facet of AI engineering (local in
 |-------------|-------|--------|
 | GitLab CEE MRs authored | 485 (370 excl. auto-generated) | GitLab API |
 | GitHub repos | 47 (17 forks with 0 upstream contributions, 30 personal/POC) | GitHub API |
-| `redhat/ai/midstream-integration/devtools` (gitlab.com) | 11 commits (3rd contributor, 11%) | Agentic smoke test pipeline | Kamesh (36), pditmars (12) |
+| [`redhat/ai/midstream-integration/devtools`](https://gitlab.com/redhat/ai/midstream-integration/devtools) (gitlab.com) | 11 commits (3rd contributor, 11%) | Agentic smoke test pipeline | Kamesh (36), pditmars (12) |
 | Upstream items (Velero ecosystem) | 3 merged PRs + 3 issues + 7 iteration PRs = 13 items | GitHub API |
 | Upstream PRs (all GitHub projects) | 71 total (44 merged) across 15 repos | GitHub API |
 | GitLab.com MRs | 9 (2 merged, 7 open) across devtools + cc-rosa-rhoai | GitLab.com API |
