@@ -39,5 +39,6 @@ Previously at Red Hat (May 2020 – Nov 2025) as Senior Software Quality Enginee
 - Owned OpenShift Virtualization data protection testing across 3 major OADP releases
 - Contributed upstream to Velero, KubeVirt, OpenShift, and Konveyor ecosystems
 - Mentored engineers toward promotion, delivered training for cross-functional teams
+- 588 merge requests across GitLab and GitHub (306 merged), 22 upstream PRs merged across Velero, KubeVirt, OpenShift, and Konveyor
 - 42 peer recognitions (Red Hat Reward Zone)
 
