@@ -1,4 +1,4 @@
-*This self-assessment was generated with [Claude Code](https://claude.com/claude-code), using verified data from parent repos on GitLab CEE, GitLab.com, GitHub, Jira, Slack, Google Docs, Google Sheets, and local performance reviews. I reviewed every claim in this document — trust no code, regardless of source. I'm fairly confident there's at least one mistake left. Hopefully not a big one.*
+*This self-assessment was generated with [Claude Code](https://claude.com/claude-code), using verified data from parent repos on GitLab CEE, GitLab.com, GitHub, Jira, Slack, Google Docs, Google Sheets, and local performance reviews.*
 
 # Amos Mastbaum — Senior Software Engineer (L4) Self-Assessment
 
