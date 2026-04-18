@@ -1,250 +1,167 @@
-# L5 (Principal Software Engineer) Development Plan
+# L5 (Principal Software Engineer) — Task List
+
+*What specifically needs to happen to justify Principal (L5) at the next review cycle.*
 
 **Candidate:** Amos Mastbaum
-**Starting Level:** Senior Software Engineer (L4)
+**Starting Level:** Senior Software Engineer (L4) — strong, verified
 **Target Level:** Principal Software Engineer (L5)
 **Timeline:** 12–18 months (Apr 2026 – Oct 2027)
-**Current Team:** Agentic & AI Engineering Tools (AAET), Red Hat AI Engineering
+**Current Team:** AAET → AIPCC (Red Hat AI Engineering)
 
 ---
 
-## Guiding Principle
+## Core Principle: Scope Over Activity
 
-The L5 ladder consistently uses: *"across the organization," "large-scale systems," "multiple teams," "drives strategy."* The gap is not capability — it's **demonstrated scope.** Every action in this plan targets expanding impact from team/component level to organizational level.
+L5 uses: *"across the organization," "large-scale systems," "multiple teams," "drives strategy."*
+Your L4 evidence shows depth, persistence, and technical mastery. L5 requires **organizational impact** — getting other teams to change how they work because of your decisions.
 
----
-
-## Dimension 1: Technical Impact
-
-**Current:** L4 — component-level contributions, upstream bug fixes
-**Target:** L5 — "Drives the technical strategy and design of software solutions across multiple subsystems, influencing the overall architecture"
-
-### Actions
-
-| # | Action | Measurable Outcome | Target Date |
-|---|--------|--------------------|-------------|
-| 1.1 | Deliver Agentic E2E framework for Summit 2026 | Framework in production, used by ≥2 teams beyond AAET | Jul 2026 |
-| 1.2 | Author an ADR (Architecture Decision Record) for agentic testing strategy that is adopted cross-team | ADR reviewed and approved by ≥2 engineering leads | Sep 2026 |
-| 1.3 | Drive a technical design that spans RHOAI + OADP or RHOAI + another subsystem | Design doc with cross-team sign-off, implementation delivered | Dec 2026 |
-| 1.4 | Contribute upstream code to a second major project (beyond Velero) | Merged PR in llama-stack, vllm, or equivalent | Mar 2027 |
-
-### Evidence to collect
-- Design documents with cross-team reviewers listed
-- Slack/email threads showing other teams adopting your architectural decisions
-- Git history showing multi-subsystem PRs
+Building more tools won't get you to L5. Getting other teams to **adopt your tools, follow your designs, and change their processes** — that's L5.
 
 ---
 
-## Dimension 2: Software Quality & Reliability
+## What You Already Have (L4 Evidence to Build On)
 
-**Current:** L4/Emerging L5 — strong within OADP ecosystem
-**Target:** L5 — "Establishes, maintains, and monitors testing practices for large-scale systems involving multiple teams"
-
-### Actions
-
-| # | Action | Measurable Outcome | Target Date |
-|---|--------|--------------------|-------------|
-| 2.1 | Extend the Agentic E2E framework to cover ≥3 RHOAI components (not just AAET) | Framework used for smoke/sanity across model serving, pipelines, and agentic components | Sep 2026 |
-| 2.2 | Define and publish a testing strategy document for RHOAI agentic workflows | Document reviewed by QE leads from ≥2 other RHOAI teams | Oct 2026 |
-| 2.3 | Establish shared test infrastructure patterns (cluster provisioning, test data, teardown) used by multiple teams | ≥2 teams adopt the patterns without your direct involvement | Jan 2027 |
-| 2.4 | Quantify quality improvements: track and report test coverage, regression cycle time, defect escape rate | Dashboard or quarterly report shared with engineering leadership | Ongoing |
-
-### Evidence to collect
-- Usage metrics for shared test infrastructure
-- Before/after metrics (cycle time, coverage, escape rate)
-- Testimonials from other team QE leads
+| Asset | Status | L5 Leverage |
+|-------|--------|-------------|
+| mtv-api-tests (62% of repo, creator) | Production standard | Proof you can build frameworks others use |
+| oadp-python-tests (40%, founder) | Production standard | Same pattern, different tech stack |
+| Velero upstream (13 items, 3 merged PRs) | Shipped in v0.8.0 | Upstream credibility established |
+| devtools smoke tests (11 commits, 3rd contributor) | In team CI | First AAET team-adopted work |
+| cc-rosa-rhoai (7 open MRs, Summit clusters use !9) | Active, pending merge | Ready for v2.0 adoption |
+| Terraform PR #59 (zero-to-PR in hours) | Delivered | Proves rapid SWE ramp-up capability |
+| Shahaf Bahar promotion (credited to mentorship) | Verified | Mentorship outcome exists |
+| 28+ CNV bugs filed → fixed by developers | Closed | Cross-team quality impact documented |
+| Manager: "Spot on performance" + 150% VIC | Q2 2025 | Peak recognition quarter |
+| Agentic SDLC methodology (verification-first) | Applied personally | Needs team adoption |
 
 ---
 
-## Dimension 3: Collaboration & Community
+## L5 Task List by Dimension
 
-**Current:** L4 — active upstream contributor
-**Target:** L5 — "Drives innovation by leading significant product-area initiatives with a community-first mindset. Participates across multiple communities"
+### 1. Technical Impact — "Drives strategy across multiple subsystems"
 
-### Actions
+| # | Task | Measurable | Due |
+|---|------|------------|-----|
+| 1.1 | Get cc-rosa-rhoai v2.0 MRs merged and used by ≥2 teams | Merge !16-!20, usage by non-AAET team | Jul 2026 |
+| 1.2 | Author an ADR for agentic testing strategy adopted cross-team | ADR reviewed by ≥2 engineering leads outside your team | Sep 2026 |
+| 1.3 | Drive a technical design spanning RHOAI + another subsystem | Design doc with cross-team sign-off, implementation delivered | Dec 2026 |
+| 1.4 | Contribute upstream to a second major project (beyond Velero) | Merged PR in llama-stack, vllm, or opendatahub | Mar 2027 |
 
-| # | Action | Measurable Outcome | Target Date |
-|---|--------|--------------------|-------------|
-| 3.1 | Become a regular contributor to opendatahub-io or llama-stack upstream | ≥5 merged PRs, recognized in community (reviewer role or mention) | Dec 2026 |
-| 3.2 | Lead or co-lead an internal working group (e.g., AI testing practices, agentic CI standards) | Working group charter, ≥3 meetings, published outcomes | Sep 2026 |
-| 3.3 | Participate in community health activities: issue triage, PR reviews for external contributors | ≥20 upstream PR reviews in a 6-month period | Mar 2027 |
-| 3.4 | Evaluate a new community/technology for potential Red Hat adoption and write a recommendation | Written evaluation shared with engineering leadership | Jun 2027 |
+### 2. Software Quality — "Large-scale systems, multiple teams"
 
-### Evidence to collect
-- Upstream contributor profile (commits, reviews, discussions)
-- Working group meeting notes and outcomes
-- Community evaluation document
+| # | Task | Measurable | Due |
+|---|------|------------|-----|
+| 2.1 | Extend smoke test pipeline to ≥3 RHOAI components | Framework used by model serving, pipelines, AND agentic teams | Sep 2026 |
+| 2.2 | Publish testing strategy doc for RHOAI agentic workflows | Reviewed by QE leads from ≥2 other teams | Oct 2026 |
+| 2.3 | Establish shared test infrastructure patterns used by others without your involvement | ≥2 teams adopt patterns independently | Jan 2027 |
+| 2.4 | Quantify quality improvements with before/after metrics | Dashboard or quarterly report to engineering leadership | Ongoing |
 
----
+### 3. Collaboration — "Drives innovation, community-first"
 
-## Dimension 4: Mentorship
+| # | Task | Measurable | Due |
+|---|------|------------|-----|
+| 3.1 | Become regular contributor to opendatahub-io or llama-stack upstream | ≥5 merged PRs, recognized as reviewer | Dec 2026 |
+| 3.2 | Lead or co-lead an internal working group (AI testing, agentic CI) | Charter, ≥3 meetings, published outcomes | Sep 2026 |
+| 3.3 | Participate in upstream community health: issue triage, PR reviews | ≥20 upstream PR reviews in 6 months | Mar 2027 |
 
-**Current:** L4 — team-level mentoring with promotion outcome
-**Target:** L5 — "Across organizations, coaches and mentors principal engineers and role models mentorship for the organization"
+### 4. Mentorship — "Coaches principal engineers, role-models mentorship"
 
-### Actions
+*L4 is already met. For L5:*
 
-| # | Action | Measurable Outcome | Target Date |
-|---|--------|--------------------|-------------|
-| 4.1 | Mentor ≥1 senior engineer from a different team toward their next level | Mentee's manager confirms growth impact | Dec 2026 |
-| 4.2 | Create a structured onboarding program for AI/agentic engineering in AAET | Program used by ≥3 new team members | Sep 2026 |
-| 4.3 | Run a cross-team workshop on agentic testing or AI-assisted development | ≥15 attendees from ≥3 teams, post-workshop survey | Oct 2026 |
-| 4.4 | Document and share mentorship patterns (what worked with Shahaf, Aadarsh) | Internal blog post or knowledge base article | Jul 2026 |
+| # | Task | Measurable | Due |
+|---|------|------------|-----|
+| 4.1 | Mentor ≥1 senior engineer from a different team toward their next level | Mentee's manager confirms impact | Dec 2026 |
+| 4.2 | Create structured onboarding program for AI/agentic engineering | Used by ≥3 new team members | Sep 2026 |
+| 4.3 | Run cross-team workshop on agentic testing or AI-assisted development | ≥15 attendees from ≥3 teams | Oct 2026 |
 
-### Evidence to collect
-- Mentee feedback (written)
-- Workshop attendance and survey results
-- Onboarding program usage metrics
+### 5. Business Impact — "Drives initiatives across the organization"
 
----
+| # | Task | Measurable | Due |
+|---|------|------------|-----|
+| 5.1 | Quantify cost/time savings from AI automation | Dollar or hour savings documented, shared with management | Sep 2026 |
+| 5.2 | Own a technical initiative spanning ≥2 teams with direct product impact | Jira epic with cross-team dependencies | Dec 2026 |
+| 5.3 | Present business impact to ≥director-level audience | Presentation delivered | Oct 2026 |
 
-## Dimension 5: Business Impact
+### 6. AI / Agentic Engineering — "Drives strategy for advanced AI ecosystems"
 
-**Current:** L4 — feature/release-level impact
-**Target:** L5 — "Owns and drives technical initiatives across the organization recognizing which pieces flow together"
+*Strongest emerging L5 dimension. Close the adoption gap:*
 
-### Actions
+| # | Task | Measurable | Due |
+|---|------|------------|-----|
+| 6.1 | Get ≥1 AI tool adopted by another team in their CI/workflow | Usage metrics from the adopting team | Sep 2026 |
+| 6.2 | Write AI-assisted testing best practices doc endorsed by ≥2 leads | Published and referenced | Oct 2026 |
+| 6.3 | Publish internal metrics: time saved, bugs caught, AI accuracy | Monthly or quarterly report | Ongoing |
+| 6.4 | Drive agentic workflow adoption across AAET/AIPCC | ≥50% of team using agentic tools, survey data | Dec 2026 |
 
-| # | Action | Measurable Outcome | Target Date |
-|---|--------|--------------------|-------------|
-| 5.1 | Quantify cost savings from AI automation (e.g., reduced cluster provisioning time, reduced manual regression hours) | Dollar or hour savings documented and shared with management | Sep 2026 |
-| 5.2 | Own a technical initiative that spans ≥2 teams and has a direct line to product quality/velocity | Initiative tracked in Jira as an epic, with cross-team dependencies | Dec 2026 |
-| 5.3 | Present business impact of your work in a sprint review or quarterly business review | Presentation delivered to ≥director-level audience | Oct 2026 |
-| 5.4 | Identify and propose a cost-optimization opportunity in CI/CD infrastructure | Proposal reviewed by engineering leadership, savings estimated | Mar 2027 |
+### 7. SDLC — "Drives SDLC evolution within the organization"
 
-### Evidence to collect
-- Cost/time savings with before/after data
-- Jira epic with cross-team issues
-- Presentation slides and attendee list
+| # | Task | Measurable | Due |
+|---|------|------------|-----|
+| 7.1 | Formalize verification-first agentic SDLC methodology and get it adopted beyond your team | Written methodology adopted by ≥1 additional team | Dec 2026 |
+| 7.2 | Introduce new testing methodology (AI-generated tests, property-based testing) to the org | In use by ≥2 teams | Mar 2027 |
 
----
+### 8. Influence — "Drives significant technical change, builds broad consensus"
 
-## Dimension 6: AI / Agentic Engineering
+| # | Task | Measurable | Due |
+|---|------|------------|-----|
+| 8.1 | Present at ≥1 technical conference (DevConf, Summit, KubeCon) | Accepted talk, delivered | Jun 2027 |
+| 8.2 | Write ≥2 blog posts on AI-assisted engineering | Published, ≥100 views each | Dec 2026 |
+| 8.3 | Lead a technical decision that changes another team's roadmap | Decision documented, team lead confirms | Mar 2027 |
+| 8.4 | Get recognized as go-to person for AI/agentic beyond your team | ≥3 unsolicited guidance requests tracked | Ongoing |
 
-**Current:** Emerging L5 — prolific building, limited adoption
-**Target:** L5 — "Drives the strategy and best practices for integrating advanced AI ecosystems to automate large-scale systems"
+### Knowledge Sharing
 
-### Actions
-
-| # | Action | Measurable Outcome | Target Date |
-|---|--------|--------------------|-------------|
-| 6.1 | Get ≥1 AI tool (test-analyser, classifier-eng, or chatbot) adopted by another team | Team using it in their CI pipeline or workflow, with usage metrics | Sep 2026 |
-| 6.2 | Write a best-practices document for AI-assisted testing in RHOAI | Document reviewed and endorsed by ≥2 engineering leads | Oct 2026 |
-| 6.3 | Publish internal metrics: time saved, bugs caught, accuracy of AI classifications | Monthly or quarterly report | Ongoing |
-| 6.4 | Drive adoption of agentic workflows (Claude Code, Cursor, etc.) across AAET with measurable productivity impact | ≥50% of team using agentic tools regularly, survey data | Dec 2026 |
-| 6.5 | Contribute AI testing patterns upstream (opendatahub-io or equivalent) | Merged PR or accepted RFC | Mar 2027 |
-
-### Evidence to collect
-- Usage dashboards for AI tools
-- Before/after productivity metrics
-- Team survey results on AI tool adoption
-- Upstream contributions
+| # | Task | Due |
+|---|------|-----|
+| K.1 | Submit CFP to DevConf.cz 2027 or Red Hat Summit 2027 | CFP deadline |
+| K.2 | Write blog post: "From SQE to SWE: What Test Engineering Teaches About AI Safety" | Aug 2026 |
+| K.3 | Write blog post: "Agentic E2E Testing at Scale" | Oct 2026 |
+| K.4 | Deliver lightning talk at internal Red Hat engineering all-hands | Dec 2026 |
 
 ---
 
-## Dimension 7: SDLC
+## Quarterly Checkpoints
 
-**Current:** L4 — team-level process improvements
-**Target:** L5 — "Drives the evolution of the SDLC within the organization"
-
-### Actions
-
-| # | Action | Measurable Outcome | Target Date |
-|---|--------|--------------------|-------------|
-| 7.1 | Formalize the agentic SDLC methodology and get it adopted beyond AAET | Written methodology, adopted by ≥1 additional team | Dec 2026 |
-| 7.2 | Introduce a new testing methodology (e.g., AI-generated test cases, property-based testing) to the org | Methodology in use by ≥2 teams | Mar 2027 |
-| 7.3 | Lead a retrospective or process improvement initiative that changes how multiple teams work | Documented process change with before/after metrics | Sep 2026 |
-
-### Evidence to collect
-- Methodology document with adoption evidence
-- Process change documentation
-- Team feedback on new practices
-
----
-
-## Dimension 8: Influence
-
-**Current:** L4 — team/adjacent team influence
-**Target:** L5 — "Drives significant technical change within their organization by building broad consensus"
-
-### Actions
-
-| # | Action | Measurable Outcome | Target Date |
-|---|--------|--------------------|-------------|
-| 8.1 | Present at ≥1 technical conference (DevConf, Red Hat Summit, KubeCon) | Accepted talk, delivered presentation | Jun 2027 |
-| 8.2 | Write ≥2 internal or external blog posts on AI-assisted engineering | Published, ≥100 views each | Dec 2026 |
-| 8.3 | Lead a technical decision that changes another team's roadmap | Decision documented, team lead confirmation | Mar 2027 |
-| 8.4 | Get recognized as a go-to person for AI/agentic engineering beyond your immediate team | ≥3 unsolicited requests for guidance from other teams (tracked) | Ongoing |
-
-### Evidence to collect
-- Conference talk recording/slides
-- Blog post URLs and view counts
-- Slack threads showing cross-team guidance requests
-- Decision records showing your influence on other teams
-
----
-
-## Knowledge Sharing (Cross-Cutting)
-
-**L5 Requirement:** "Presents at technical conferences"
-
-| # | Action | Target Date |
-|---|--------|-------------|
-| K.1 | Submit a CFP to DevConf.cz 2027 or Red Hat Summit 2027 | CFP deadline (varies) |
-| K.2 | Write first blog post: "From SQE to SWE: What Test Engineering Teaches About AI Safety" | Aug 2026 |
-| K.3 | Write second blog post: "Agentic E2E Testing at Scale" (after Summit framework delivery) | Oct 2026 |
-| K.4 | Deliver a lightning talk at an internal Red Hat engineering all-hands | Dec 2026 |
-
----
-
-## Quarterly Milestones
-
-### Q2 2026 (Apr–Jun)
-- [ ] Deliver Summit 2026 Agentic E2E framework MVP
-- [ ] Document mentorship patterns (blog/KB article)
-- [ ] Start tracking AI tool usage metrics
+### Q2 2026 (Apr–Jun) — Foundation
+- [ ] cc-rosa-rhoai v2.0 MRs reviewed and moving toward merge
+- [ ] Terraform PR delivered (✅ done — PR #59)
+- [ ] Smoke test pipeline in CI (✅ done — devtools)
 - [ ] Submit first CFP
+- [ ] Start tracking AI tool adoption metrics
 
-### Q3 2026 (Jul–Sep)
-- [ ] Framework adopted by ≥2 teams
+### Q3 2026 (Jul–Sep) — Adoption
+- [ ] cc-rosa-rhoai adopted by ≥2 teams
 - [ ] Cross-team workshop delivered
-- [ ] AI best-practices document published
+- [ ] AI best-practices doc published
 - [ ] First blog post published
-- [ ] Cost savings quantified and reported
+- [ ] Cost savings quantified
 
-### Q4 2026 (Oct–Dec)
-- [ ] Testing strategy document for RHOAI reviewed by other teams
+### Q4 2026 (Oct–Dec) — Scale
+- [ ] Testing strategy doc reviewed by other teams
 - [ ] ≥1 AI tool adopted by another team with metrics
 - [ ] Second blog post published
 - [ ] Agentic SDLC methodology formalized
 - [ ] Cross-team technical decision documented
 
-### Q1 2027 (Jan–Mar)
-- [ ] Shared test infrastructure patterns adopted by ≥2 teams
+### Q1 2027 (Jan–Mar) — Evidence
+- [ ] Shared test infrastructure adopted by ≥2 teams independently
 - [ ] ≥5 upstream PRs merged (opendatahub-io or equivalent)
 - [ ] Conference talk delivered or confirmed
-- [ ] L5 self-assessment refresh with evidence
 
-### Q2 2027 (Apr–Jun)
-- [ ] Community evaluation document published
-- [ ] Cross-org mentoring outcome verified
+### Q2 2027 (Apr–Jun) — Case
 - [ ] **L5 promotion case assembled with verified evidence**
+- [ ] All dimensions show "across the organization" scope
+- [ ] Manager aligned, panel-ready
 
 ---
 
-## How to Track Progress
+## How to Track
 
-1. **Monthly self-check:** Review this plan, update checkboxes, note blockers
-2. **Evidence folder:** Collect screenshots, links, metrics in `/home/amos/git/sw5/l5-evidence/`
-3. **Manager alignment:** Share this plan with your manager within 2 weeks. Get buy-in on priorities.
-4. **Quarterly refresh:** Update this document every quarter with actual vs. planned progress
-
----
-
-## Key Principle: Scope Over Activity
-
-Building more tools won't get you to L5. Getting other teams to adopt your tools, follow your designs, and change their processes because of your influence — that's L5. Every action in this plan has a **"used by others"** or **"adopted by X teams"** qualifier for exactly this reason.
+1. **Monthly:** Review this list, update checkboxes, note blockers
+2. **Evidence folder:** Collect links, screenshots, metrics in `/home/amos/git/sw5/l5-evidence/`
+3. **Manager alignment:** Share this plan with your manager within 2 weeks
+4. **Quarterly refresh:** Update this doc every quarter with actual vs planned
 
 ---
 
-*Generated with Claude Code. Review and adjust priorities with your manager.*
+*Generated with [Claude Code](https://claude.com/claude-code). Based on verified L4 assessment across 18 data sources.*
