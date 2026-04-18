@@ -29,7 +29,7 @@
 
 * **Framework Creation & Contribution:**
   - `mtv-api-tests` — **Created and led** (216 commits, 62% of repo). Built VM provider API abstraction layers for VMware and RHV. Production standard for successor team. Other contributors: Qin Yuan (29), Maayan Hadasi (30).
-  - `oadp-python-tests` — **Founded** (92 commits, ~40% of repo). Top contributor. Shahaf Bahar became 2nd contributor (39 merges). Still the production standard.
+  - `oadp-python-tests` — **Founded** (92 commits, ~40% of repo). Top contributor. Shahaf Bahar became 2nd contributor (39 merges). Later made the difficult decision to discontinue the repo — maintaining two parallel E2E frameworks (Python + Go) wasn't sustainable. The Go framework (oadp-e2e-qe) became the single standard. In hindsight, AI-assisted code conversion could have migrated all tests, but the consolidation decision was the right call for the team at the time.
   - `openshift-adp-python-wrapper` — **Co-founded from PR #2** across two repos: `oadp-qe/openshift-adp-python-wrapper` (29 PRs, 22 merged — built project setup, resource handlers, DPA/Backup/Restore API classes, VolumeSnapshot extensions) + `RedHatQE/openshift-python-wrapper` (7 PRs, 6 merged) = **36 PRs total, 28 merged**.
   - `oadp-apps-deployer` — 2nd largest contributor (66 commits, ~21% merge share). Prasad Joshi leads (52 merges). Established Ansible/KubeVirt role patterns.
   - `oadp-e2e-qe` — Contributor (85 commits, ~7.6% overall merge share), but **owns two subsystems within the repo:**
