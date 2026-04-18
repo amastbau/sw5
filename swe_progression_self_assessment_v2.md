@@ -199,7 +199,7 @@ Each project deliberately explored a different facet of AI engineering (local in
 
 **Career VIC average: ~97%** (23 quarters). Peaks at **150%** (Q2 2025 — Velero upstream delivery) and **127%** (Q3 2021 — MTV framework peak).
 
-**2025 H2 – 2026 Q1 (80%):** Lower VIC during team transition — split across OADP and AAET simultaneously, investing personal time in AAET onboarding and team engagement while continuing to deliver on OADP releases. Manager acknowledged context.
+**2025 H2 (80%):** Lower VIC during team transition — split across OADP and AAET simultaneously, investing personal time in AAET onboarding and team engagement while continuing to deliver on OADP releases. Manager acknowledged context.
 
 **Annual talent assessments:**
 
