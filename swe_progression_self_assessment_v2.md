@@ -108,9 +108,12 @@
 ## 6. AI / Agentic Engineering
 **L4 Requirement:** Evaluates and introduces new AI-driven methodologies that resolve complex issues and improve Engineering efficiency.
 
-**Team-adopted / upstream-contributed work:**
+**Team-adopted / upstream-contributed:**
 
 * **cc-rosa-rhoai** ([gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai)): ROSA HCP cluster lifecycle automation. 7 open MRs for v2.0 release, building on Roland Huß's codebase. [MR !9](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/9) (ODH install) is actively used — Summit 2026 clusters are built on main + this MR. Versioned by other team members. Not merged due to no repo owner assigned yet. v2.0 MRs: [!16](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/16) (replatform), [!17](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/17) (eval gates), [!18](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/18) (workbench-deploy ~3900 lines), [!19](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/19) (AAET add-ons), [!20](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/20) (ODH commands). Sprint demo (Feb 2026): established performance benchmarks.
+
+---
+
 **Personal POC/experimental (no verified team adoption):**
 
 * **midstream-integration-chatbot**: RAG chatbot built on Llama Stack to "eat our own dog food" — validating Red Hat's AI stack internally. Includes detailed trace exposing RAG and LLM payloads for full transparency. Demoed to team with positive reviews. Manager feedback: "positive feedback on the RAG chatbox" (1:1 with Chris Bynum, Nov 2025). Underwent security review. Not in team production use.
