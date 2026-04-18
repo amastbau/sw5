@@ -9,10 +9,21 @@
 ## 1. Technical Impact
 **L4 Requirement:** Leads the design and development of software solutions for features that cross multiple subsystems or components.
 
-* **Upstream Code Contributions (Go):** Authored and merged Go code in upstream projects outside my QE scope:
-  - **Velero core** (`velero-io/velero#9024`): LabelSelector restore fix — 1 merged PR in a repo with 5000+ commits. Initially submitted as PR #8796 (Mar 2025), questioned by upstream maintainer. Implemented in the OADP fork to prove viability. Upstream merged PR #9166 (Jan 2026), validating the approach.
-  - **openshift/velero** (`#379`): Downstream carry fix — selective PVC restore with VolumeSnapshot/VolumeSnapshotContent handling.
-  - **kubevirt-velero-plugin** (`kubevirt/kubevirt-velero-plugin#349`): Fixed critical bug in VM resource graph logic — PVCs silently excluded during restore with label selectors, causing DataVolumes to hang. 22 lines across 5 files. Included in release v0.8.0.
+* **Upstream Code Contributions (Go) — velero-io/velero:**
+  - **PR #9024 (MERGED, Jul 2025):** LabelSelector restore fix — related PVC and VolumeSnapshot not included during restore. Iterated through 3 PRs (#8795, #8796, #9024) before the approach was accepted. Initially questioned by upstream maintainer ("I'm not very convinced"); proved viability in OADP fork; upstream adopted.
+  - **Issue #7099 (Nov 2023):** Identified post-restore hooks timing bug — hooks run before DataDownload releases PV. Filed upstream, initially deprioritized.
+  - **Issue #8910 (May 2025):** Reported PostHooks multiple exec hooks ignored in HooksAttempts calculation.
+  - **Issue #9182 (Aug 2025):** Proposed granular control over Velero annotation hooks.
+
+* **Upstream Code — openshift/velero (downstream carry):**
+  - **PR #379 (MERGED, Apr 2025):** Selective PVC restore — moved size patch to backup action, added VolumeSnapshot/VolumeSnapshotContent to CSI additional items. Iterated through PRs #360, #378, #379.
+  - **PR #435 (Draft, Aug 2025):** Skip annotation hooks during backup (in progress).
+
+* **Upstream Code — kubevirt/kubevirt-velero-plugin:**
+  - **PR #349 (MERGED, Apr 2025, in release v0.8.0):** Fixed critical bug in VM resource graph — PVCs silently excluded during restore with label selectors, causing DataVolumes to hang. 22 lines across 5 files. Iterated from PR #328.
+  - **PRs #366, #369:** E2E test improvements (closed/draft).
+
+  **Total upstream footprint: 3 merged PRs + 3 issues filed + 7 additional PRs (iterations/drafts) = 13 upstream items across 3 repos.**
 
 * **Framework Creation & Contribution:**
   - `mtv-api-tests` — **Created and led** (216 commits, 62% of repo). Built VM provider API abstraction layers for VMware and RHV. Production standard for successor team. Other contributors: Qin Yuan (29), Maayan Hadasi (30).
@@ -181,8 +192,9 @@
 | `migrationqe/oadp-qe-automation` | 37 | 5% | Contributor | Tareq Alayan (97), Md Nadeem |
 | `migrationqe/migrationqe-automation` | 28 | 2% | Contributor | M Sajid Mansoori, Tareq, Nadeem |
 | `RedHatQE/openshift-python-wrapper` | 9 PRs | 2% | Minor contributor | myakove (1247), rnetser (358) |
-| `velero-io/velero` | 1 PR | <0.1% | Bug fix | 5000+ commits in repo |
-| `kubevirt/kubevirt-velero-plugin` | 1 PR | ~1% | Bug fix | alromeros, skagan, Lee Yarwood |
+| `velero-io/velero` | 1 merged PR + 2 closed PRs + 3 issues filed | <0.1% | Bug fix, advocacy, proposals | 5000+ commits in repo |
+| `openshift/velero` | 1 merged PR + 3 closed PRs | <0.1% | Carry fix + iterations | — |
+| `kubevirt/kubevirt-velero-plugin` | 1 merged PR + 3 closed PRs | ~1% | Bug fix (v0.8.0) + E2E | alromeros, skagan, Lee Yarwood |
 
 **Total verified professional commits: ~550-600 across 12 team/upstream repos (2020-2026)**
 
@@ -190,7 +202,8 @@
 |-------------|-------|--------|
 | GitLab CEE MRs authored | 485 (370 excl. auto-generated) | GitLab API |
 | GitHub repos | 47 (17 forks with 0 upstream contributions, 30 personal/POC) | GitHub API |
-| Upstream merged PRs | 22 (across Velero, kubevirt, openshift-python-wrapper, konveyor) | GitHub API |
+| Upstream items (Velero ecosystem) | 3 merged PRs + 3 issues + 7 iteration PRs = 13 items | GitHub API |
+| Upstream merged PRs (all projects) | 22 (across Velero, kubevirt, openshift-python-wrapper, konveyor) | GitHub API |
 
 ---
 
