@@ -43,7 +43,6 @@
 
 * **ADR: AI-Assisted Code Reviews** — Reviewed and contributed to ADR for AI-assisted code reviews across AAET GitLab repositories (AAET-MI004, authored by Kamesh Akella). Provided input on local CLI tooling and CI workflow patterns. Jira: RHAIENG-2757.
 
-* **Active SWE Transition:** "Movement readiness to Software Engineer" discussed in 1:1 with Klara Bezdekova (Apr 2026). Integration into Model Validation team. Research: GCP to IBM migration, logging consolidation via agentic solutions, GPUaaS working group.
 
 * **First Terraform PR Delivered (Apr 2026):** With no prior Terraform-specific knowledge (but experience with other IaC tools), completed a comprehensive self-onboarding using AI-assisted deep-dive into the `iac-sandbox` Terraform/GCP project. After a short meeting and agentic exploration, produced PR [#59](https://github.com/Jounce-IO/iac-sandbox/pull/59) — adding optional DNS managed zone and Cloud Domains registration to `project-bootstrap/gcp/`. Validated with `terraform plan` against the live GCP project. Corrected starter code from ticket (added missing required blocks identified via provider docs research). Total time: a few hours from zero Terraform knowledge to merged-ready PR.
 
