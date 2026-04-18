@@ -203,8 +203,8 @@ Each project deliberately explored a different facet of AI engineering (local in
 - *"Amos was key this quarter... FIXED BUGS in OADP and in Velero... Spot on performance and I could not ask for anything more."* — Wes Hayutin (Q2 2025, Slack)
 
 **Self-identified development areas (Q4 2024 review):**
-- Improving WIP management to avoid overcommitting to parallel priorities
-- Enhancing communication on task statuses and interdependencies
+- Improving WIP management to avoid overcommitting to parallel priorities — now addressed using agentic task tracking and AI-assisted prioritization
+- Enhancing communication on task statuses and interdependencies — now addressed using AI-generated session summaries and structured status updates
 
 ---
 
