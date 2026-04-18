@@ -247,3 +247,67 @@ Each project deliberately explored a different facet of AI engineering (local in
 > *"Amos is very responsible for his work, eager to help others and comes up with ideas and suggestions to automate and improve things and processes."* — **Shveta Sachdeva**
 > *"Looking at you makes others improve themselves as well."* — **Igor Braginsky**
 
+---
+
+## Appendix: Significant PRs, MRs & Issues (Linked)
+
+### Upstream Velero Ecosystem
+
+| Link | Repo | Type | Description |
+|------|------|------|-------------|
+| [PR #9024](https://github.com/velero-io/velero/pull/9024) | velero-io/velero | **MERGED** | LabelSelector restore fix — PVC and VolumeSnapshot not included during restore |
+| [PR #8796](https://github.com/velero-io/velero/pull/8796) | velero-io/velero | Closed | Initial approach — questioned by maintainer, proved in fork |
+| [PR #8795](https://github.com/velero-io/velero/pull/8795) | velero-io/velero | Closed | Early iteration — handle missing VolumeSnapshot in CSI restore |
+| [Issue #7099](https://github.com/velero-io/velero/issues/7099) | velero-io/velero | Issue | Post-restore hooks timing bug (filed Nov 2023, validated 18 months later) |
+| [Issue #8910](https://github.com/velero-io/velero/issues/8910) | velero-io/velero | Issue | PostHooks multiple exec hooks ignored in calculation |
+| [Issue #9182](https://github.com/velero-io/velero/issues/9182) | velero-io/velero | Issue | Proposed granular control over annotation hooks |
+| [PR #379](https://github.com/openshift/velero/pull/379) | openshift/velero | **MERGED** | Selective PVC restore — downstream carry fix |
+| [PR #435](https://github.com/openshift/velero/pull/435) | openshift/velero | Draft | Skip annotation hooks during backup |
+| [PR #349](https://github.com/kubevirt/kubevirt-velero-plugin/pull/349) | kubevirt/kubevirt-velero-plugin | **MERGED (v0.8.0)** | Critical VM resource graph fix — PVCs excluded during restore |
+| [PR #328](https://github.com/kubevirt/kubevirt-velero-plugin/pull/328) | kubevirt/kubevirt-velero-plugin | Closed | Initial iteration of VM graph fix |
+
+### OADP & Migration QE Frameworks (GitLab CEE)
+
+| Link | Repo | MRs | Description |
+|------|------|-----|-------------|
+| [mtv-api-tests](https://gitlab.cee.redhat.com/mtv-qe/mtv-api-tests) | mtv-qe/mtv-api-tests | 51 (38 merged) | **Created repo** — VM provider API abstractions for VMware/RHV |
+| [oadp-python-tests](https://gitlab.cee.redhat.com/app-mig/oadp-python-tests) | app-mig/oadp-python-tests | 68 (49 merged) | **Founded** — Python test framework, production standard |
+| [oadp-e2e-qe](https://gitlab.cee.redhat.com/app-mig/oadp-e2e-qe) | app-mig/oadp-e2e-qe | 123 (59 merged) | Created kubevirt-plugin suite + backup library tests (64+ commits) |
+| [oadp-apps-deployer](https://gitlab.cee.redhat.com/app-mig/oadp-apps-deployer) | app-mig/oadp-apps-deployer | 50 (32 merged) | Ansible/KubeVirt role patterns, containerized deployer |
+| [oadp-qe-automation](https://gitlab.cee.redhat.com/migrationqe/oadp-qe-automation) | migrationqe/oadp-qe-automation | 37 (24 merged) | RGW support, backup library infra, Windows VM templates |
+| [migrationqe-automation](https://gitlab.cee.redhat.com/migrationqe/migrationqe-automation) | migrationqe/migrationqe-automation | 31 (17 merged) | GCPS3, legacy-aws, backup lib matrix, cross-cluster params |
+
+### Python Wrapper (GitHub)
+
+| Link | Repo | PRs | Description |
+|------|------|-----|-------------|
+| [openshift-adp-python-wrapper](https://github.com/oadp-qe/openshift-adp-python-wrapper) | oadp-qe | 29 (22 merged) | **Co-founded from PR #2** — project setup, DPA/Backup/Restore API classes, VolumeSnapshot extensions |
+| [openshift-python-wrapper](https://github.com/RedHatQE/openshift-python-wrapper) | RedHatQE | 7 (6 merged) | MTV resource handlers (VirtualMachineImport, VMware, Provider) |
+
+### Konveyor / Tackle (GitHub)
+
+| Link | Repo | PRs | Description |
+|------|------|-----|-------------|
+| [tackle-ui-tests](https://github.com/konveyor/tackle-ui-tests) | konveyor | 7 (4 merged) | UI test automation |
+| [tackle-api-tests](https://github.com/konveyor/tackle-api-tests) | konveyor | 5 (3 merged) | API test automation |
+| [tackle2-hub](https://github.com/konveyor/tackle2-hub) | konveyor | 3 (3 merged) | Go code fixes — SSL warnings, import errors, error messages |
+
+### AAET / AIPCC (GitLab.com + GitHub)
+
+| Link | Repo | Items | Description |
+|------|------|-------|-------------|
+| [devtools MRs](https://gitlab.com/redhat/ai/midstream-integration/devtools/-/merge_requests?author_username=amastbau) | redhat/ai/.../devtools | 2 merged | Agentic E2E smoke test CI pipeline (RHAIENG-3688) |
+| [cc-rosa-rhoai MRs](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests?author_username=amastbau) | redhat/ai/.../cc-rosa-rhoai | 7 open | v2.0 release — replatform, eval gates, workbench-deploy, ODH, AAET add-ons |
+| [iac-sandbox PR #59](https://github.com/Jounce-IO/iac-sandbox/pull/59) | Jounce-IO | 1 open | Terraform — DNS managed zone + Cloud Domains (first SWE task) |
+| [gpu-dashboard PR #3](https://github.com/red-hat-data-services/gpu-observability-dashboard/pull/3) | red-hat-data-services | 1 open | GPU Assistant with Thanos + K8s API (unreviewed) |
+| [llama-stack-demos PR #327](https://github.com/opendatahub-io/llama-stack-demos/pull/327) | opendatahub-io | 1 open | Multi-source RAG crawler demo |
+
+### Other Notable
+
+| Link | Repo | Type | Description |
+|------|------|------|-------------|
+| [oadp-operator PR #1218](https://github.com/openshift/oadp-operator/pull/1218) | openshift/oadp-operator | Closed | Product operator code — mongo block sample app fix |
+| [forklift-ui PR #945](https://github.com/kubev2v/forklift-ui/pull/945) | kubev2v/forklift-ui | Closed | VMware cluster sub-folder image |
+| [ocp-python-wrapper](https://gitlab.cee.redhat.com/cnv-qe/ocp-python-wrapper) | cnv-qe | 13 MRs (5 merged) | VMIMPORT, VMware support, storage access |
+| [jenkins-jcasc-n](https://gitlab.cee.redhat.com/aosqe/jenkins-jcasc-n) | aosqe | 10 MRs (8 merged) | Jenkins-as-Code configuration |
+
