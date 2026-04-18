@@ -30,18 +30,14 @@ Nov 2025 – Present
 
 Agentic & AI Engineering Tools (AAET) / AI Platform Core Components (AIPCC) within Red Hat AI Engineering.
 
-- Delivered agentic E2E smoke test CI pipeline for RHOAI Summit 2026 clusters — 3rd largest contributor to the team's shared devtools repo
-- 7 open merge requests for cc-rosa-rhoai v2.0 release (ROSA HCP cluster lifecycle automation) — actively used for Summit cluster provisioning
-- Contributed upstream Go code to Velero and kubevirt-velero-plugin, merged in official releases
-- Built multiple AI engineering POCs (RAG chatbots on Llama Stack, CrewAI agents, LangChain multi-provider implementations) that informed production architectural decisions
+- Building agentic E2E testing and cluster automation for Red Hat's AI platform (RHOAI)
+- Contributed upstream Go code to Velero and KubeVirt plugin, merged in official releases
+- Exploring AI-assisted engineering workflows (RAG, CrewAI, LangChain) to inform production tooling
 
 Previously at Red Hat (May 2020 – Nov 2025) as Senior Software Quality Engineer:
-- Created MTV API test framework (216 commits, 62% of repo) — production standard for VM migration testing
-- Founded OADP Python test framework — later made the leadership decision to consolidate on Go
-- Co-founded openshift-adp-python-wrapper from PR #2 (36 PRs, 28 merged across two repos)
-- Owned KubeVirt plugin test suite and backup library tests in oadp-e2e-qe
-- Delivered E2E quality sign-off for 3 major OADP releases (1.3.x, 1.4.x, 1.5.x)
-- Filed 28+ bugs to CNV developers, 13 upstream items in Velero ecosystem
-- Mentored engineers toward promotion, delivered multi-day training for documentation teams
-- 42 Red Hat Reward Zone recognitions across collaboration, team focus, and encouragement
+- Created and led multiple test automation frameworks adopted as production standards across teams
+- Owned OpenShift Virtualization data protection testing across 3 major OADP releases
+- Contributed upstream to Velero, KubeVirt, OpenShift, and Konveyor ecosystems
+- Mentored engineers toward promotion, delivered training for cross-functional teams
+- 42 peer recognitions (Red Hat Reward Zone)
 
