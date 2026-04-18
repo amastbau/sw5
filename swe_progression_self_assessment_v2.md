@@ -103,7 +103,7 @@
 * **test-analyser**: Claude/Vertex AI regression analysis tool.
 * **classifier-eng**: FastAPI log classifier for CI pipelines.
 * **auto-todo**: AI agents autonomously handle GitHub issues.
-* **cc-rosa-rhoai**: ROSA HCP cluster lifecycle automation (GitLab CEE, internal).
+* **cc-rosa-rhoai** (`redhat/ai/midstream-integration/cc-rosa-rhoai`): 7 open MRs on the parent repo for v2.0 release, building on Roland Huß's codebase. Contributions include: v2.0 replatform (!16), eval gates system (!17), workbench-deploy E2E orchestrator (~3900 lines, !18), AAET add-on installer for Kagenti/Langflow/Langfuse/MCP Gateway (!19), ODH install/uninstall (!20). All mergeable, pending review.
 * **ai-tools hub**: Shared section in devtools repository for cross-team AI workflow documentation.
 
 * **cc-rosa-rhoai Sprint Demo** (Feb 2026): Demonstrated ROSA tool in team sprint demo. Session established performance benchmarks (2.5 hours vs 15 min manual). Tool's session summary capability praised for debugging and documentation value.
