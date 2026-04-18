@@ -1,3 +1,5 @@
+*This self-assessment was generated with [Claude Code](https://claude.com/claude-code), using verified data from parent repos on GitLab CEE, GitLab.com, GitHub, Jira, Slack, Google Docs, Google Sheets, and local performance reviews.*
+
 # Amos Mastbaum — Senior Software Engineer (L4) Self-Assessment
 
 **Target Level:** 4 — Senior Software Engineer
@@ -239,4 +241,3 @@ See companion document: `l5_development_plan.md`
 > *"Amos is very responsible for his work, eager to help others and comes up with ideas and suggestions to automate and improve things and processes."* — **Shveta Sachdeva**
 > *"Looking at you makes others improve themselves as well."* — **Igor Braginsky**
 
-*This self-assessment was generated with Claude Code, using verified data from parent repos on GitLab CEE, GitHub, Jira, Slack, and Google Sheets APIs.*
