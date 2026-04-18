@@ -14,9 +14,9 @@
   - **kubevirt-velero-plugin** (`kubevirt/kubevirt-velero-plugin#349`): Fixed a critical bug in the VM resource graph logic — PVCs were silently excluded during restore when using label selectors, causing DataVolumes to hang indefinitely. 22 lines changed across 5 files; root cause required tracing through non-trivial graph-building code. The fix also unintentionally resolved a bug in the OADP 1.5 SelfService controller.
 
 * **Framework Architecture (3 frameworks founded):**
-  - `oadp-python-tests` — Founded from scratch, sole author of all framework code (118 commits). Still the production standard.
+  - `oadp-python-tests` — Early founder and architect (56 commits). Shahaf Bahar became the primary contributor (72 commits) after the framework was established. Still the production standard.
   - `mtv-api-tests` — Built the MTV API test framework from scratch in Python, including VM provider API abstraction layers for VMware and RHV. Production standard for the successor team.
-  - `oadp-apps-deployer` — Major contributor (68 commits), established the Ansible/KubeVirt role patterns used by the team.
+  - `oadp-apps-deployer` — Second-largest contributor (40+ commits, Prasad Joshi leads with 50+). Established the Ansible/KubeVirt role patterns.
 
 * **Agentic E2E Framework (In Progress):** Currently architecting the Agentic E2E framework for RHOAI Summit 2026, defining how AI agents automate infrastructure provisioning and CI/CD across ROSA, devtools, and agent repositories. Jira: RHAIENG-3688 (Critical), RHAIENG-3923.
 
@@ -155,7 +155,7 @@
 | Doc PRs reviewed | 55+ | Self-reported |
 | Upstream Go PRs (Velero + kubevirt-velero-plugin) | 3 | GitHub |
 | Contribution timeline | Sept 2020 – Present | GitLab API |
-| Frameworks founded | 3 (oadp-python-tests, mtv-api-tests, oadp-apps-deployer patterns) | GitLab API |
+| Frameworks co-founded/contributed | 3 (oadp-python-tests founder→56 commits, mtv-api-tests founder, oadp-apps-deployer 2nd contributor→40+ commits) | GitLab API |
 
 ---
 

@@ -258,7 +258,7 @@ Director of AI Engineering at Red Hat — skeptical but fair, requiring evidence
 | Velero upstream PR #9166 merged in main (Jan 2026) | Slack S4 #18 | Strong |
 | kubevirt-velero-plugin PR #349 merged, included in release v0.8.0 | Slack S7 #1 (git log), GitHub | Strong |
 | openshift/velero PR #379 — downstream carry fix | Slack S7 #3, S7 #13 | Strong |
-| Founded oadp-python-tests (118 commits, sole author) | GitLab CEE | Strong |
+| Co-founded oadp-python-tests (56 commits; Shahaf Bahar became top contributor with 72) | GitLab CEE | Moderate — shared credit |
 | Founded mtv-api-tests framework | GitLab CEE (50 MRs) | Strong |
 | Major contributor to oadp-apps-deployer (68 commits) | GitLab CEE | Strong |
 | Containerized oadp-apps-deployer as `quay.io/amastbau/oadp-apps-deployer` | Slack S8 #1 | Moderate |

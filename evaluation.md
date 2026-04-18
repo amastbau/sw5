@@ -45,7 +45,7 @@ Amos Mastbaum presents a **strong Senior Software Engineer (L4) profile** with g
 
 1. **Upstream Go code to Velero and kubevirt-velero-plugin** — Genuine cross-boundary SWE work from a QE role. The kubevirt-velero-plugin fix (#349) traced a non-trivial root cause through graph-building code. Velero PR #9166 eventually merged upstream. This is the single strongest SWE-transition signal.
 
-2. **Framework founding pattern (sustained over 6 years)** — oadp-python-tests (118 commits, sole founder), MTV API tests (sole founder), oadp-apps-deployer (68 commits, established Ansible/KubeVirt patterns), ocp-python-wrapper contributions (13 MRs). 485 total MRs across 20 projects. This is not dabbling — it's sustained engineering output.
+2. **Framework contribution pattern (sustained over 6 years)** — oadp-python-tests (co-founder, 56 commits; Shahaf Bahar became top contributor with 72), MTV API tests (founder), oadp-apps-deployer (2nd largest contributor with 40+ commits; Prasad Joshi leads with 50+), ocp-python-wrapper contributions (13 MRs). 485 total MRs across 20 projects. This is not dabbling — it's sustained engineering output.
 
 3. **Manager business justification (independent validation)** — The Boston relocation document from Amos's manager states: *"highly-regarded and proven engineer,"* *"critical talent,"* *"continues to trend upwards in his strong performance."* This is a manager willing to invest organizational capital in this engineer.
 
