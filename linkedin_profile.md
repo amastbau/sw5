@@ -2,7 +2,7 @@
 
 ## Headline
 
-Senior Software Engineer at Red Hat | AI-Assisted Engineering | Cloud-Native & Virtualization | 30 Years in Tech
+Senior Software Engineer at Red Hat | Agentic AI & DevOps | Cloud-Native & Virtualization | 30 Years in Tech
 
 ---
 
