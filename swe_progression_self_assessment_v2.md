@@ -291,7 +291,7 @@ Each project deliberately explored a different facet of AI engineering (local in
 | Link | Repo | PRs | Description |
 |------|------|-----|-------------|
 | [tackle-ui-tests](https://github.com/konveyor/tackle-ui-tests) | konveyor | 7 (4 merged) | UI test automation |
-| [tackle-api-tests](https://github.com/konveyor/tackle-api-tests) | konveyor | 5 (3 merged) | API test automation |
+| [tackle-api-tests](https://github.com/konveyor/tackle-api-tests) | konveyor | 5 (3 merged) | API test automation — mentored mguetta and helped initiate the project |
 | [tackle2-hub](https://github.com/konveyor/tackle2-hub) | konveyor | 3 (3 merged) | Go code fixes — SSL warnings, import errors, error messages |
 
 ### AAET / AIPCC (GitLab.com + GitHub)
