@@ -33,7 +33,6 @@ Agentic & AI Engineering Tools (AAET) / AI Platform Core Components (AIPCC) with
 - Delivered agentic E2E smoke test CI pipeline for RHOAI Summit 2026 clusters — 3rd largest contributor to the team's shared devtools repo
 - 7 open merge requests for cc-rosa-rhoai v2.0 release (ROSA HCP cluster lifecycle automation) — actively used for Summit cluster provisioning
 - Contributed upstream Go code to Velero and kubevirt-velero-plugin, merged in official releases
-- First SWE task: small Terraform PR (t-shirt size: S) delivered in hours — deliberately picked for quick ramp-up, using AI-assisted development with rigorous human review
 - Built multiple AI engineering POCs (RAG chatbots on Llama Stack, CrewAI agents, LangChain multi-provider implementations) that informed production architectural decisions
 
 Previously at Red Hat (May 2020 – Nov 2025) as Senior Software Quality Engineer:
