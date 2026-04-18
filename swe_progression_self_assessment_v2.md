@@ -99,6 +99,7 @@
 * **Legacy Backup Library:** Led the effort to create a library of backups from past releases for 2–3 year customer compliance retention (verified by manager in quarterly review).
 * **Upstream Bug Advocacy:** Identified upstream bugs initially deprioritized as edge cases. One resurfaced when Siemens was impacted — validating the original assessment.
 * **Release Delivery:** Delivered E2E quality sign-off for 3 major OADP releases.
+* **Cross-Role Recognition:** 42 Red Hat Reward Zone recognitions across Collaborate (19), Focus on Team (13), Encourage Others (6), and other categories. Notable: **Scott Seago** (OADP developer) awarded "Red Hat Multiplier — Collaborate" (Dec 2024) — cross-role recognition from upstream developer. **Yakov Beder** awarded "Team Advocate — Encourage Others" (Jul 2025). Manager confirmed face-to-face guidance to Solution Architects working with customers.
 
 > *"Amos lead the effort to create a library of backups from past releases... This is quite critical as some businesses have 2-3 year compliance requirements."* — **Wes Hayutin (Q4 2024 review)**
 
