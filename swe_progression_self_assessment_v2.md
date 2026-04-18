@@ -155,7 +155,7 @@ Each project deliberately explored a different facet of AI engineering (local in
   - `konveyor/tackle2-hub` — 3 merged PRs
   - `opendatahub-io/llama-stack-demos` — 1 PR open (#327, not yet merged)
 * **Cross-Team Collaboration:** Active across CNV-QE, OADP, migrationQE, RHAIENG, AIPCC teams.
-* **Internal Channels:** Active contributor in #forum-oadp, #oadp-qe, #oadp-cnv, #forum-mig-velero.
+* **Internal Channels:** Active contributor in #forum-oadp, #oadp-qe, #oadp-cnv, #forum-mig-velero (OADP era), and #forum-ghostpod, #forum-ai-midstream-integration (AAET era — Summit cluster provisioning, component deployment status, smoke test coordination).
 
 **Note:** 17 of 47 GitHub repos are forks with zero upstream contributions. 30 non-fork repos are personal/POC projects.
 
