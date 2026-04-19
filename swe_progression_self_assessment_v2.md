@@ -178,6 +178,10 @@ Each project deliberately explored a different facet of AI engineering (local in
 **L4 Requirement:** Shares expertise through design documents, blog posts, and mentoring on best practices.
 
 * Delivered multi-day OADP training for MMS documentation writers (verified via Slack).
+* Presented [Intro to K8s API, MTV Architecture & API Test Frameworks](https://docs.google.com/presentation/d/1iV0p8kyn8Oqa-VpYhTfe6OnEtPuvN3L3WtkWsfo_g6Y/edit) (Nov 2022) — technical deep-dive for the team.
+* Presented [Introduction to Python Behave](https://docs.google.com/presentation/d/1OvZoQBXAQaElZCzGA7q6pNf-VfT_w_gOO8AMwnXBrEM/edit) (Jun 2023) — BDD test framework training.
+* Authored [ADR: Agentic E2E Smoke Test CI Pipeline](https://docs.google.com/document/d/1qcFnGSKgeCuAdDqM8GDEKP2WFBa_qR4VkloZaatOCJU/edit) (Mar 2026) — architecture document for RHAIENG-3688.
+* Participated in AAET onboarding sessions: "Deploying RHOAI on ROSA — Show and Tell" (Dec 2025), "Test Frameworks Overview" (Jan 2026) — both recorded.
 * Reviewed 55+ OADP documentation PRs for technical accuracy.
 * Created READMEs and onboarding documentation for frameworks and AI tools.
 
