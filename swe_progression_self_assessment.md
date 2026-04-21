@@ -54,8 +54,6 @@ Nearly three decades of hands-on engineering across every layer of the stack —
 
 * **Instrumental Promotion Impact:** **Shahaf Bahar** explicitly credited my mentorship as instrumental in their recent promotion.
 * **AI-First Coaching:** I actively coach engineers across teams (devtools, ROSA, agents) to overcome "AI anxiety" by adopting a **verification-first workflow**. This allows engineers to use agents as a learning accelerator, compressing the learning curve for Go, RAG, and infrastructure automation.
-* **Mentorship at Scale:** I established the **ai-tools** section in the devtools repository as a team-wide hub for shared prompts, agent tasks, and workflows across Claude, Cursor, and Gemini — this is mentorship encoded as infrastructure, teaching the organization rather than individuals.
-
 > *"Thanks to your mentorship, I've been able to overcome challenges and achieve new heights, culminating in my recent promotion."* — **Shahaf Bahar**
 > *"I couldn't think of myself for where I am right now without you."* — **Aadarsh Raj**
 > *"You support my team and teach them with passion and dedication."* — **Meital Arki**
@@ -90,8 +88,6 @@ Nearly three decades of hands-on engineering across every layer of the stack —
   - **voice-assistant**: Whisper.cpp STT with hotword detection, learning commands locally for token efficiency
   - **auto-todo**: fully autonomous agentic development loop — AI reads codebase, writes code, opens PRs, auto-fixes on test failure
   - **dual-llm-chat**, **source-pad**: multi-model orchestration exploring how different models complement each other
-  - Established the **ai-tools** section in the devtools repository as a team-wide hub for shared prompts, agent tasks, and workflows across Claude, Cursor, and Gemini.
-  
   This is an engineer's lab notebook, not abandoned code — each experiment informed architectural decisions in the production tools that followed.
 
 > *"Amos has had some great ideas and there is code to back it too."* — **Wes Hayutin**
@@ -106,8 +102,8 @@ Nearly three decades of hands-on engineering across every layer of the stack —
 * **Influence (L5):** Corrected Velero upstream roadmap; peers seek guidance proactively.
 * **Collaboration (L5):** Actively evaluated and joined the opendatahub-io/llama-stack-demos community to validate Red Hat's AI stack direction — contributing a multi-source RAG crawler demo (PR #327).
 * **System Design (L5):** Architected fault-tolerant systems — the verification layer in the agentic SDLC is specifically a fault-tolerance mechanism for AI-generated code, ensuring reliability at scale.
-* **Communication (L5):** Despite learning disabilities, communicates complex strategies effectively across the organization — chatbot sprint review demo, multi-hour Docs training, face-to-face SA guidance, ai-tools README as cross-team documentation.
-* **Knowledge Sharing (L5):** Delivered 4+ hour OADP training; reviewed 55+ OADP doc PRs. Established ai-tools hub as internal knowledge base. Conference talks are a gap to address — current knowledge sharing is primarily internal and through code/tooling.
+* **Communication (L5):** Despite learning disabilities, communicates complex strategies effectively across the organization — chatbot sprint review demo, multi-hour Docs training, face-to-face SA guidance.
+* **Knowledge Sharing (L5):** Delivered 4+ hour OADP training; reviewed 55+ OADP doc PRs. Conference talks are a gap to address — current knowledge sharing is primarily internal and through code/tooling.
 
 > *"Amos is very responsible for his work, eager to help others and comes up with ideas and suggestions to automate and improve things and processes."* — **Shveta Sachdeva**
 > *"Looking at you makes others improve themselves as well."* — **Igor Braginsky**

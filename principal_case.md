@@ -106,11 +106,10 @@ The evaluation itself rated this **"STRONG Senior (L4) / EMERGING Principal (L5)
 - **Meital Arki (Manager, MTV)** — *"I would like to thank you for the MTV handover — you support my team and teach them with passion and dedication with lots of patience and broad knowledge."* Note: a manager crediting mentorship to their entire team.
 - **Konveyor/tackle-api-tests** — mentored mguetta and helped initiate the project (5 PRs, 3 merged)
 - **OADP docs training** — multi-day training for MMS documentation writers with homework exercises. Writer feedback: *"Amos invested a great amount of his time teaching us how to correctly use the product... It was wonderful learning from him"* — **Carmi Wisemon**
-- **ai-tools hub** — established team-wide shared prompts, agent tasks, and workflows in the devtools repository as encoded mentorship infrastructure
 - **22+ peer recognitions** from 15+ distinct individuals across 5+ teams (2020–2025)
 - **Manager's business justification:** *"Strategic Mentorship and Best Practices... instrumental in fostering a culture of continuous improvement"* — independent of any self-assessment
 
-**L5 argument:** The evaluation said "no evidence of mentoring principal engineers." But L5 mentorship is about *organizational impact on talent development*, not just the seniority of the mentee. A promotion credited to mentorship, a manager crediting mentorship to their team, multi-day training programs, encoded mentorship infrastructure (ai-tools hub), and 22+ peer recognitions spanning 5 years and 15+ individuals — this is role-modeling mentorship at scale.
+**L5 argument:** The evaluation said "no evidence of mentoring principal engineers." But L5 mentorship is about *organizational impact on talent development*, not just the seniority of the mentee. A promotion credited to mentorship, a manager crediting mentorship to their team, multi-day training programs, and 22+ peer recognitions spanning 5 years and 15+ individuals — this is role-modeling mentorship at scale.
 
 ---
 
@@ -139,14 +138,13 @@ The evaluation rated this **"EMERGING Principal (L5)"** — the only dimension t
 | **devtools smoke test pipeline** | In team CI (GitLab CI), 11 commits to shared repo, 3rd contributor. RHAIENG-3688 (Critical). Validated on real cluster: 11 passed, 6 skipped, 1 xfailed. |
 | **cc-rosa-rhoai** | **Summit 2026 clusters are built on main + MR !9.** Versioned by other team members. 7 open MRs for v2.0. Sprint demo (Feb 2026). |
 | **midstream-integration-chatbot** | Demoed to team. Manager feedback: *"positive feedback on the RAG chatbox"* (1:1 with Chris Bynum). Underwent security review. Built on **Llama Stack** — dogfooding Red Hat's own AI stack. |
-| **ai-tools hub** | Established in team devtools repo as shared knowledge base for Claude, Cursor, and Gemini workflows. |
 | **ADR contribution** | Reviewed and contributed to AI-Assisted Code Reviews ADR (AAET-MI004) — cross-team architectural decision. |
 
 **Strategic AI platform breadth (10+ projects in ~12 months):**
 
 RAG (midstream-integration-chatbot, 100+ commits), local LLM routing (hybrid-llm), agentic CI (cc-rosa-rhoai, devtools), agentic development (auto-todo), voice interfaces (voice-assistant), log classification (classifier-eng), regression analysis (test-analyser), multi-model orchestration (dual-llm-chat, source-pad), onboarding automation (onboarding_bot). Each explored a different facet of AI engineering; learnings fed into production tools.
 
-**L5 argument:** L5 requires *"drives the strategy and best practices for integrating advanced AI ecosystems."* Amos is doing exactly this: building production AI tools adopted by the team (smoke tests in CI, cc-rosa-rhoai for Summit clusters), establishing best practices (ai-tools hub, ADR contribution, verification-first methodology), and dogfooding Red Hat's own AI stack (Llama Stack chatbot). The R&D breadth is not scattered experimentation — it's systematic exploration that informed production decisions.
+**L5 argument:** L5 requires *"drives the strategy and best practices for integrating advanced AI ecosystems."* Amos is doing exactly this: building production AI tools adopted by the team (smoke tests in CI, cc-rosa-rhoai for Summit clusters), establishing best practices (ADR contribution, verification-first methodology), and dogfooding Red Hat's own AI stack (Llama Stack chatbot). The R&D breadth is not scattered experimentation — it's systematic exploration that informed production decisions.
 
 > *"Amos has had some great ideas and there is code to back it too."* — **Wes Hayutin**
 
@@ -205,7 +203,7 @@ Scope is not measured by org chart — it's measured by who is affected by your 
 
 ### "AI projects: prolific building, no adoption evidence"
 
-**Counter:** devtools smoke tests are in team CI. cc-rosa-rhoai is building Summit 2026 clusters. ai-tools hub is in the team's shared devtools repo. The chatbot got positive manager feedback and underwent security review. The evaluation was written before several of these adoption signals materialized.
+**Counter:** devtools smoke tests are in team CI. cc-rosa-rhoai is building Summit 2026 clusters. The chatbot got positive manager feedback and underwent security review. The evaluation was written before several of these adoption signals materialized.
 
 ### "SQE→SWE transition is 5 months old"
 
@@ -219,7 +217,7 @@ L5 does not require a specific title history — it requires demonstrated princi
 
 ### "No conference presentations"
 
-**Counter:** This is a genuine gap. It is acknowledged and being addressed (CFP submissions planned for DevConf.cz 2027 and Red Hat Summit 2027). However, L4 also says *"Presents at technical conferences"* — suggesting this is an L4 gap as well, not an L4→L5 differentiator. The internal knowledge sharing (4+ hour OADP training, multi-day docs training, sprint demos, presentations, 55+ doc PR reviews, ai-tools hub) is substantial.
+**Counter:** This is a genuine gap. It is acknowledged and being addressed (CFP submissions planned for DevConf.cz 2027 and Red Hat Summit 2027). However, L4 also says *"Presents at technical conferences"* — suggesting this is an L4 gap as well, not an L4→L5 differentiator. The internal knowledge sharing (4+ hour OADP training, multi-day docs training, sprint demos, presentations, 55+ doc PR reviews) is substantial.
 
 ---
 
