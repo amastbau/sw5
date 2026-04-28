@@ -21,7 +21,7 @@
 | 2014–2018 | Forcepoint/Websense | Senior QA Engineer | Java, JavaScript, E2E automation, integration testing | Enterprise security |
 | 2018–2019 | Sizmek by Amazon | Automation Engineer | Big Data workflows, testing | Ad-tech |
 | 2019–2020 | Medial EarlySign | QA & Automation Engineer | ML-based diagnostics | Medical ML |
-| 2020–present | Red Hat | SQE → Senior SQE → Software Engineer | Go, Python, Bash, Ansible, Terraform, K8s, OpenShift, AI/ML | Cloud-native |
+| 2020–present | Red Hat | SQE → Senior SQE | Go, Python, Bash, Ansible, Terraform, K8s, OpenShift, AI/ML | Cloud-native |
 
 **Certifications & Course Completions:** Oracle SQL/PLSQL, MCSE, ISTQB, Control-M Expert, OpenShift Virtualization, OpenShift, OpenShift AI
 
