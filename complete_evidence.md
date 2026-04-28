@@ -16,12 +16,12 @@
 |--------|---------|------|------------|----------|
 | 1996–1999 | Netvision | Technical Support & Networking | ISP infrastructure, networking, dial-up/broadband | ISP / Telecom |
 | 1999–2001 | Startup (incl. 8-month NY relocation) | Technical role | Early internet technologies | Startup |
-| 2005–2008 | Intel | Engineering Computing Specialist | CAD infrastructure | Chip design |
+| 2005–2008 | Intel | Engineering Computing Specialist | CAD infrastructure, Linux/Unix administration | Chip design |
 | 2009–2013 | Orange/Partner Communications | Automation Engineer, IT Operations | C#/.NET, cross-platform (billing, CRM, enterprise) | Telecom |
 | 2014–2018 | Forcepoint/Websense | Senior QA Engineer | Java, JavaScript, E2E automation, integration testing | Enterprise security |
 | 2018–2019 | Sizmek by Amazon | Automation Engineer | Big Data workflows, testing | Ad-tech |
 | 2019–2020 | Medial EarlySign | QA & Automation Engineer | ML-based diagnostics | Medical ML |
-| 2020–present | Red Hat | Senior SQE → Software Engineer | Go, Python, Bash, Ansible, Terraform, K8s, OpenShift, AI/ML | Cloud-native |
+| 2020–present | Red Hat | SQE → Senior SQE → Software Engineer | Go, Python, Bash, Ansible, Terraform, K8s, OpenShift, AI/ML | Cloud-native |
 
 **Certifications & Course Completions:** Oracle SQL/PLSQL, MCSE, ISTQB, Control-M Expert, OpenShift Virtualization, OpenShift, OpenShift AI
 
@@ -33,8 +33,8 @@
 
 | Period | Team | Manager | Focus |
 |--------|------|---------|-------|
-| May 2020 – Dec 2022 | MTV QE | Daniel Gur, Ilanit Stein | MTV API test framework (creator) |
-| 2022 – Oct 2025 | OADP QE | Daniel Gur, Aziza Karol, Wes Hayutin | OADP E2E, KubeVirt domain owner, Velero upstream |
+| May 2020 – Dec 2022 | MTV | Daniel Gur, Ilanit Stein | MTV API test framework (creator) |
+| 2022 – Oct 2025 | OADP | Daniel Gur, Aziza Karol, Wes Hayutin | OADP E2E, KubeVirt domain owner, Velero upstream |
 | Q3 2024 (~1 month) | MTV (cross-team return) | Aziza Karol | Assisted MTV while in OADP |
 | Nov 2025 – present | AAET → AIPCC | Chris Bynum | AI/agentic testing, Summit infrastructure, Terraform |
 
@@ -140,10 +140,10 @@
 
 | Framework | Amos Commits | % of Repo | Role | Teams Using |
 |-----------|-------------|-----------|------|-------------|
-| [mtv-api-tests](https://gitlab.cee.redhat.com/mtv-qe/mtv-api-tests) | 216 | 62% | **Creator** | MTV QE (handed to Meital Arki's team, Dec 2022) |
-| [oadp-python-tests](https://gitlab.cee.redhat.com/app-mig/oadp-python-tests) | 92 | 40% | **Founder** | OADP QE |
-| [openshift-adp-python-wrapper](https://github.com/oadp-qe/openshift-adp-python-wrapper) | 29 PRs (22 merged) | 32% | **Co-founder** | OADP QE, RedHatQE upstream |
-| [oadp-e2e-qe kubevirt-plugin](https://gitlab.cee.redhat.com/app-mig/oadp-e2e-qe) | owns 2 suites | subsystem owner | **Created kubevirt-plugin suite + sole contributor to backuplib** | OADP QE |
+| [mtv-api-tests](https://gitlab.cee.redhat.com/mtv-qe/mtv-api-tests) | 216 | 62% | **Creator** | MTV (handed to Meital Arki's team, Dec 2022) |
+| [oadp-python-tests](https://gitlab.cee.redhat.com/app-mig/oadp-python-tests) | 92 | 40% | **Founder** | OADP |
+| [openshift-adp-python-wrapper](https://github.com/oadp-qe/openshift-adp-python-wrapper) | 29 PRs (22 merged) | 32% | **Co-founder** | OADP, RedHatQE upstream |
+| [oadp-e2e-qe kubevirt-plugin](https://gitlab.cee.redhat.com/app-mig/oadp-e2e-qe) | owns 2 suites | subsystem owner | **Created kubevirt-plugin suite + sole contributor to backuplib** | OADP |
 
 ---
 
