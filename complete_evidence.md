@@ -6,7 +6,7 @@
 **Current Role:** Software Engineer (AAET/AIPCC, since Nov 2025)
 **Previous Role:** Senior Software Quality Engineer (OADP, 2022–2025)
 **Red Hat Tenure:** May 2020 – Present (6 years)
-**Career Span:** ~20 years across 6 companies, 5 industries
+**Career Span:** ~30 years across 8 companies, 7 industries
 
 ---
 
@@ -14,6 +14,8 @@
 
 | Period | Company | Role | Tech Stack | Industry |
 |--------|---------|------|------------|----------|
+| 1996–1999 | Netvision | Technical Support & Networking | ISP infrastructure, networking, dial-up/broadband | ISP / Telecom |
+| 1999–2001 | Startup (incl. 8-month NY relocation) | Technical role | Early internet technologies | Startup |
 | 2005–2008 | Intel | Engineering Computing Specialist | CAD infrastructure | Chip design |
 | 2009–2013 | Orange/Partner Communications | Automation Engineer, IT Operations | C#/.NET, cross-platform (billing, CRM, enterprise) | Telecom |
 | 2014–2018 | Forcepoint/Websense | Senior QA Engineer | Java, JavaScript, E2E automation, integration testing | Enterprise security |
