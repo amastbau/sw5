@@ -1,0 +1,76 @@
+name: "/ask — Claude Code Q&A"
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write
+  pull-requests: write
+  contents: read
+
+jobs:
+  answer:
+    if: startsWith(github.event.comment.body, '/ask')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add eyes reaction
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: 'eyes'
+            });
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Authenticate with GCP
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run Claude Code
+        env:
+          CLAUDE_CODE_USE_VERTEX: "1"
+          ANTHROPIC_VERTEX_PROJECT_ID: "itpc-gcp-ai-eng-claude"
+          CLOUD_ML_REGION: "us-east5"
+        run: |
+          QUESTION=$(echo '${{ github.event.comment.body }}' | sed 's|^/ask ||')
+
+          claude -p "You are answering a question about Amos Mastbaum's software engineering career at Red Hat. Read the markdown files in this repo for context (principal_case.md, evidence_bank.md, swe_progression_self_assessment_v2.md, pr_inventory.md, evaluation.md). Answer based ONLY on what you find in these files. Cite specific evidence (PR numbers, quotes, dates). Be concise. Question: ${QUESTION}" \
+            --output-format text \
+            --max-turns 3 \
+            --model claude-sonnet-4-6 \
+            > response.md 2>/dev/null || echo "**Error:** Claude Code failed to generate a response." > response.md
+
+      - name: Post response
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let body = fs.readFileSync('response.md', 'utf8');
+            body += '\n\n---\n*Assisted-by: Claude Code (Sonnet). All claims should be verified against source documents.*';
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: body
+            });
+
+      - name: Add rocket reaction
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: 'rocket'
+            });

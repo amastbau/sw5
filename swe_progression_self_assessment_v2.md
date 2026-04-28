@@ -69,7 +69,7 @@
 * **Release Quality Ownership:** Owned E2E QE strategy for OpenShift Virtualization data protection across 3 major OADP releases (1.3.x, 1.4.x, 1.5.x).
 * **Review Authority:** Reviewed 137+ MRs across 7+ team members and 55+ OADP documentation PRs.
 * **Cross-Platform Test Coverage:** Test matrices spanning AWS, GCP, Azure, ODF/CephFS, MinIO, FIPS, SNO, proxy, cross-cluster, and KubeVirt (verified via Jira: 20+ automated test execution tickets).
-* **Automation:** Built jira-auto tooling for automated test result tracking from CI pipelines.
+* **Automation:** Used jira-auto tooling (built by Tareq Alayan) for automated test result tracking from CI pipelines.
 * **Cross-Team Bug Reporting:** Filed 28+ bugs to CNV developers (Sam Lucidi, Fabien Dupont, Piotr Kliczewski, others) covering VMIO, warm migration, VMware source, storage class, and hot-plug disk issues. 6 documentation bugs filed to Avital Pinnick. 1 OCPBUGS filed (CRC virsh auth).
 
 > *"Thank you for your hard work, attention to detail, and commitment to delivering a high-quality OADP 1.3 and timely release."* — **Aziza Karol**
@@ -110,7 +110,7 @@
 
 **Team-adopted / upstream-contributed:**
 
-* **cc-rosa-rhoai** ([gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai)): ROSA HCP cluster lifecycle automation. 7 open MRs for v2.0 release, building on Roland Huß's codebase. [MR !9](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/9) (ODH install) is actively used — Summit 2026 clusters are built on main + this MR. Versioned by other team members. Not merged due to no repo owner assigned yet. v2.0 MRs: [!16](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/16) (replatform), [!17](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/17) (eval gates), [!18](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/18) (workbench-deploy ~3900 lines), [!19](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/19) (AAET add-ons), [!20](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/20) (ODH commands). Sprint demo (Feb 2026): established performance benchmarks.
+* **cc-rosa-rhoai** ([gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai)): ROSA HCP cluster lifecycle automation. 7 open MRs for v2.0 release, building on Roland Huß's codebase. [MR !9](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/9) (ODH install) is actively used — Summit 2026 clusters are built on main + this MR. Versioned by other team members. Not merged due to no repo owner assigned yet. v2.0 MRs: [!16](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/16) (replatform), [!17](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/17) (eval gates), [!18](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/18) (workbench-deploy ~3900 lines), [!19](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/19) (AAET add-ons), [!20](https://gitlab.com/redhat/ai/midstream-integration/cc-rosa-rhoai/-/merge_requests/20) (ODH commands). Demoed to team (Feb 2026).
 
 ---
 
@@ -141,7 +141,7 @@ Each project deliberately explored a different facet of AI engineering (local in
 
 * **OADP CI/CD Pipeline (migrationqe-automation):** 31 MRs (17 merged) to the team's Jenkins-based CI/CD pipeline — added GCPS3 support, legacy-aws matrix, RGW backup locations, backup library test stages, kubevirt matrix configs, cross-cluster ginkgo params, Windows VM source deployment, and bucket mirroring. This repo IS the SDLC pipeline for OADP QE.
 * **Jenkins Infrastructure:** 10 MRs (8 merged) to [`aosqe/jenkins-jcasc-n`](https://gitlab.cee.redhat.com/aosqe/jenkins-jcasc-n) for Jenkins-as-Code configuration. Built MR_tester integration in oadp-e2e-qe for automated test triggering from merge requests.
-* **Test Result Automation:** Built jira-auto system for automated Jira issue creation from CI test results across multiple platform configurations.
+* **Test Result Automation:** Used jira-auto system (built by Tareq Alayan) for automated Jira issue creation from CI test results. Built MR_tester integration for automated test triggering from merge requests.
 * **Agentic E2E CI (AAET):** Delivered smoke test CI pipeline into [`redhat/ai/midstream-integration/devtools`](https://gitlab.com/redhat/ai/midstream-integration/devtools) (11 commits) — GitLab CI with Slack notifications, 3-tier test framework, nightly scheduled runs.
 * **Agentic SDLC (Emerging):** Developing a verification-first approach to AI-assisted development. Currently applying in the AAET team.
 
