@@ -33,9 +33,8 @@ Team needed automated pipeline for provisioning and testing on IBM Cloud. Team h
 Team needed repeatable way to provision ROSA clusters with RHOAI/ODH for Summit demos and testing. Manual provisioning was error-prone and inconsistent.
 
 **What I did**:
-- Built CLI with slash commands for cluster lifecycle (provision, configure, destroy)
-- Used for Summit 2026 cluster deployments
-- Hardening work: addressed identity collisions (LDAP vs. OCM), secret exposure in terminal output, token usage optimization
+- Extended the skills and scripts to support cluster lifecycle (provision, configure, destroy) to support RHOAI (and upstread ODH).
+
 
 **Tech**: Python, ROSA CLI, RHOAI/ODH APIs, click framework
 
