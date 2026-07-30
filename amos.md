@@ -22,7 +22,7 @@ Team needed automated validation that RHAII builds work on stable RHOAI releases
 Team needed automated pipeline for provisioning and testing on IBM Cloud. Team had been using GCP; IBM Cloud was new territory.
 
 **What I did**:
-- Wrote Terraform modules for project-bootstrap (resource groups, IAM policies, DNS zones), persistence (PostgreSQL databases with HMAC credentials stored in Secrets Manager), and cert-manager/External Secrets Operator integration
+- Led the Designe and Wrote Terraform modules and github actions for project-bootstrap (resource groups, IAM policies, DNS zones), persistence (PostgreSQL databases with HMAC credentials stored in Secrets Manager), and cert-manager/External Secrets Operator integration
 - Built pipeline infrastructure for provisioning and running tests
 
 **Tech**: Terraform, IBM Cloud APIs (CIS, Secrets Manager, Certificate Manager, VPC), Bash scripting
@@ -33,7 +33,7 @@ Team needed automated pipeline for provisioning and testing on IBM Cloud. Team h
 Team needed repeatable way to provision ROSA clusters with RHOAI/ODH for Summit demos and testing. Manual provisioning was error-prone and inconsistent.
 
 **What I did**:
-- Extended the skills and scripts to support  to support RHOAI (and upstream ODH) deployment over rosa.
+- Extended the skills and scripts to support RHOAI (and upstream ODH) deployment over rosa.
 
 
 **Tech**: Python, ROSA CLI, RHOAI/ODH APIs, click framework
