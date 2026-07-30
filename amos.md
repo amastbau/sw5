@@ -33,7 +33,7 @@ Team needed automated pipeline for provisioning and testing on IBM Cloud. Team h
 Team needed repeatable way to provision ROSA clusters with RHOAI/ODH for Summit demos and testing. Manual provisioning was error-prone and inconsistent.
 
 **What I did**:
-- Extended the skills and scripts to support cluster lifecycle (provision, configure, destroy) to support RHOAI (and upstread ODH).
+- Extended the skills and scripts to support  to support RHOAI (and upstream ODH) deployment over rosa.
 
 
 **Tech**: Python, ROSA CLI, RHOAI/ODH APIs, click framework
