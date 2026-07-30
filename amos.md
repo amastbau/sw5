@@ -100,7 +100,6 @@ Team needed automated E2E testing for VM migration workflows (VMware → OpenShi
 - **Python**: Test frameworks (mtv-api-tests, oadp-python-tests, backuplib, claudio-skills)
 - **Terraform**: IBM Cloud infrastructure modules
 - **Bash**: Automation, CI/CD orchestration, MCP tool development
-- **C#/.NET, Java, JavaScript**: Previous roles (Orange, Forcepoint, Sizmek)
 
 ### Platforms
 - **Kubernetes/OpenShift**: OADP operator, Velero, kubevirt, CSI drivers, storage backends
