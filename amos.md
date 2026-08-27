@@ -65,6 +65,18 @@ Summit demo clusters needed nightly health checks to catch regressions before cu
 
 ---
 
+### AIPCC Learning Resources
+
+- **Mapt SNC Provision** (Tekton task): [infra-aws-ocp-snc.yaml](https://github.com/redhat-developer/mapt/blob/main/tkn/infra-aws-ocp-snc.yaml)
+- **AIPCC Knowledge Base**: [NotebookLM Research Assistant](https://notebooklm.google.com/notebook/6916b269-d239-48af-870e-01c90da5345d)
+- **Product Setup Configs**: [aipcc-product-management-configs](https://gitlab.com/redhat/rhel-ai/ci-cd/aipcc-product-management-configs)
+- **KRD (Konflux) for RHAIIS**: [stone-prod-p02/rhaiis](https://gitlab.cee.redhat.com/releng/konflux-release-data/-/tree/main/tenants-config/cluster/stone-prod-p02/tenants/ai-tenant/rhaiis?ref_type=heads)
+- **RHAIIS Source Code**: [containers](https://gitlab.com/redhat/rhel-ai/rhaiis/containers)
+- **Tekton Pipeline Templates**: [konflux-data](https://gitlab.com/redhat/rhel-ai/konflux-data)
+- **Example ITS Pipeline**: [rhelai-bootc-upgrade-test.yaml](https://gitlab.com/redhat/rhel-ai/konflux-data/-/blob/main/pipelines/rhelai-bootc-upgrade-test.yaml?ref_type=heads)
+
+---
+
 ## OADP (2022–2025)
 
 ### Velero PVC Restore Graph Fix
