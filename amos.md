@@ -6,6 +6,19 @@ Amos Mastbaum
 
 ## AIPCC (2026–present)
 
+### Release Cycle Metrics Dashboard (RHOAIENG-76482)
+Team needed release cycle timing visibility in the release-readiness dashboard. Metrics like code-freeze-to-release duration and checkpoint timing were tracked manually, no automated tracking or trend analysis.
+
+**What I did**:
+- Designed and implemented Release Cycle Timing Metrics backend (rhods-qe-tools MR !328)
+- Built frontend dashboard component with visualizations (rhai-org-pulse PR #1448)
+- Integrated Jira field extraction, date parsing, and scheduled metric uploads
+- All CI checks passing; pending review and merge
+
+**Tech**: Python, Jira API, GitLab CI/CD, React/frontend visualization
+
+---
+
 ### RHAII on RHOAI Integration Test Suite (AIPCC-19537)
 Team needed automated validation that RHAII builds work on stable RHOAI releases. Problem: mapt (team's cluster provisioning tool) only installed latest RHOAI from fast channel, but we needed to test against stable versions.
 
