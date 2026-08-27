@@ -6,6 +6,19 @@ Amos Mastbaum
 
 ## AIPCC (2026–present)
 
+### Release Cycle Metrics Dashboard (RHOAIENG-76482)
+Team needed release cycle timing visibility in the release-readiness dashboard. Metrics like code-freeze-to-release duration and checkpoint timing were tracked manually, no automated tracking or trend analysis.
+
+**What I did**:
+- Designed and implemented Release Cycle Timing Metrics backend (rhods-qe-tools MR !328)
+- Built frontend dashboard component with visualizations (rhai-org-pulse PR #1448)
+- Integrated Jira field extraction, date parsing, and scheduled metric uploads
+- All CI checks passing; pending review and merge
+
+**Tech**: Python, Jira API, GitLab CI/CD, React/frontend visualization
+
+---
+
 ### RHAII on RHOAI Integration Test Suite (AIPCC-19537)
 Team needed automated validation that RHAII builds work on stable RHOAI releases. Problem: mapt (team's cluster provisioning tool) only installed latest RHOAI from fast channel, but we needed to test against stable versions.
 
@@ -49,6 +62,18 @@ Summit demo clusters needed nightly health checks to catch regressions before cu
 - Integrated into team CI for nightly runs
 
 **Tech**: Python, pytest, GitLab CI/CD, Slack webhooks, RHOAI/ODH APIs
+
+---
+
+### AIPCC Learning Resources
+
+- **Mapt SNC Provision** (Tekton task): [infra-aws-ocp-snc.yaml](https://github.com/redhat-developer/mapt/blob/main/tkn/infra-aws-ocp-snc.yaml)
+- **AIPCC Knowledge Base**: [NotebookLM Research Assistant](https://notebooklm.google.com/notebook/6916b269-d239-48af-870e-01c90da5345d)
+- **Product Setup Configs**: [aipcc-product-management-configs](https://gitlab.com/redhat/rhel-ai/ci-cd/aipcc-product-management-configs)
+- **KRD (Konflux) for RHAIIS**: [stone-prod-p02/rhaiis](https://gitlab.cee.redhat.com/releng/konflux-release-data/-/tree/main/tenants-config/cluster/stone-prod-p02/tenants/ai-tenant/rhaiis?ref_type=heads)
+- **RHAIIS Source Code**: [containers](https://gitlab.com/redhat/rhel-ai/rhaiis/containers)
+- **Tekton Pipeline Templates**: [konflux-data](https://gitlab.com/redhat/rhel-ai/konflux-data)
+- **Example ITS Pipeline**: [rhelai-bootc-upgrade-test.yaml](https://gitlab.com/redhat/rhel-ai/konflux-data/-/blob/main/pipelines/rhelai-bootc-upgrade-test.yaml?ref_type=heads)
 
 ---
 
