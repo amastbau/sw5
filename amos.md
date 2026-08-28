@@ -75,7 +75,12 @@ Summit demo clusters needed nightly health checks to catch regressions before cu
 - **Tekton Pipeline Templates**: [konflux-data](https://gitlab.com/redhat/rhel-ai/konflux-data)
 - **Example ITS Pipeline**: [rhelai-bootc-upgrade-test.yaml](https://gitlab.com/redhat/rhel-ai/konflux-data/-/blob/main/pipelines/rhelai-bootc-upgrade-test.yaml?ref_type=heads)
 
----
+- **how we setup our products** https://gitlab.com/redhat/rhel-ai/ci-cd/aipcc-product-management-configs
+- **KRD (Konflux)** for RHAIIS https://gitlab.cee.redhat.com/releng/konflux-release-data/-/tree/main/tenants-config/cluster/stone-prod-p02/tenants/ai-tenant/rhaiis?ref_type=heads
+- **source code for RHAIIS** https://gitlab.com/redhat/rhel-ai/rhaiis/containers
+- **templates for tekton pipeines in source code** https://gitlab.com/redhat/rhel-ai/konflux-data
+- **example of ITS** https://gitlab.com/redhat/rhel-ai/konflux-data/-/blob/main/pipelines/rhelai-bootc-upgrade-test.yaml?ref_type=heads
+- **example of provision SNC with mapt as tekton task** https://github.com/redhat-developer/mapt/blob/main/tkn/infra-aws-ocp-snc.yaml
 
 ## OADP (2022–2025)
 
